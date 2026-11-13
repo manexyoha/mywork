@@ -1,0 +1,2267 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Truth and Life Baptist Church| Running Ministry & Community Activities</title>
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Font Awesome CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Outfit:wght@400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+
+  <!-- Tailwind Custom Configuration -->
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+            display: ['Outfit', 'sans-serif'],
+          },
+          colors: {
+            brand: {
+              50: '#ecfdf5',
+              100: '#d1fae5',
+              200: '#a7f3d0',
+              300: '#6ee7b7',
+              400: '#34d399',
+              500: '#10b981',
+              600: '#059669',
+              700: '#047857',
+              800: '#065f46',
+              900: '#064e3b',
+            },
+            accent: {
+              amber: '#f59e0b',
+              gold: '#eab308',
+              orange: '#f97316',
+              navy: '#0f172a',
+              sky: '#0284c7',
+            }
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    /* Custom Utilities */
+    .glass-nav {
+      background: rgba(255, 255, 255, 0.92);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+    }
+
+    .hero-gradient {
+      background: linear-gradient(135deg, rgba(15, 23, 42, 0.88) 0%, rgba(6, 78, 59, 0.82) 100%),
+        url('https://images.unsplash.com/photo-1476480862126-209bfaa8edc8?q=80&w=2000&auto=format&fit=crop') center/cover no-repeat;
+    }
+
+    .pace-card.active {
+      border-color: #059669;
+      background-color: #ecfdf5;
+      box-shadow: 0 10px 25px -5px rgba(5, 150, 105, 0.15);
+    }
+
+    /* Hide scrollbar for tabs */
+    .no-scrollbar::-webkit-scrollbar {
+      display: none;
+    }
+
+    .no-scrollbar {
+      -ms-overflow-style: none;
+      scrollbar-width: none;
+    }
+  </style>
+</head>
+
+<body class="bg-slate-50 text-slate-800 font-sans antialiased selection:bg-brand-500 selection:text-white">
+
+  <!-- ================= TOP ANNOUNCEMENT BANNER ================= -->
+  <div
+    class="bg-gradient-to-r from-emerald-700 via-teal-700 to-slate-900 text-white text-xs sm:text-sm py-2.5 px-4 font-medium">
+    <div class="max-w-7xl mx-auto flex items-center justify-between flex-wrap gap-2">
+      <div class="flex items-center gap-2">
+        <span
+          class="inline-flex items-center px-2 py-0.5 rounded-full text-xs font-semibold bg-amber-400 text-slate-900">
+          <i class="fa-solid fa-person-running mr-1"></i> Special Event
+        </span>
+        <span>Grace Faith & Stride <strong>Annual 5K / 10K Charity Run</strong> is open for registration!</span>
+      </div>
+      <div class="flex items-center gap-4 text-xs">
+        <a href="#featured-5k" class="underline underline-offset-4 hover:text-amber-300 font-semibold transition">
+          View Event & Register <i class="fa-solid fa-arrow-right ml-1"></i>
+        </a>
+        <span class="hidden md:inline text-emerald-300">|</span>
+        <span class="hidden md:inline"><i class="fa-regular fa-clock mr-1"></i> Weekly Saturday Runs @ 7:00 AM</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- ================= NAVIGATION ================= -->
+  <header class="sticky top-0 z-40 glass-nav border-b border-slate-200/80 transition-all duration-300 shadow-sm"
+    id="main-header">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-20">
+
+        <!-- Logo -->
+        <a href="#" class="flex items-center gap-3 group">
+          <div
+            class="w-12 h-12 rounded-2xl bg-gradient-to-br from-emerald-600 to-teal-800 flex items-center justify-center text-white shadow-md shadow-emerald-700/20 group-hover:scale-105 transition-transform">
+            <i class="fa-solid fa-person-running text-xl"></i>
+          </div>
+          <div>
+            <div class="flex items-center gap-1.5">
+              <span class="font-display font-extrabold text-xl sm:text-2xl tracking-tight text-slate-900"> Truth and
+                Life Baptist Church</span>
+              <span
+                class="text-xs font-bold uppercase tracking-widest text-emerald-600 bg-emerald-50 px-2 py-0.5 rounded-md border border-emerald-200">Church</span>
+            </div>
+            <p class="text-xs text-slate-500 font-medium">Running & Community Activities</p>
+          </div>
+        </a>
+
+        <!-- Desktop Navigation Links -->
+        <nav class="hidden lg:flex items-center gap-8 text-sm font-semibold text-slate-600">
+          <a href="#activities-explorer" class="hover:text-emerald-600 transition flex items-center gap-1.5">
+            <i class="fa-solid fa-calendar-days text-slate-400"></i> All Activities
+          </a>
+          <a href="#running-ministry" class="hover:text-emerald-600 transition flex items-center gap-1.5">
+            <i class="fa-solid fa-person-running text-emerald-600"></i> Running Ministry
+          </a>
+          <a href="#featured-5k" class="hover:text-emerald-600 transition flex items-center gap-1.5">
+            <i class="fa-solid fa-medal text-amber-500"></i> Annual Program
+          </a>
+          <a href="#schedule-view" class="hover:text-emerald-600 transition flex items-center gap-1.5">
+            <i class="fa-solid fa-clock text-slate-400"></i> Weekly Activities
+          </a>
+          <a href="#pace-finder" class="hover:text-emerald-600 transition flex items-center gap-1.5">
+            <i class="fa-solid fa-compass text-slate-400"></i> Pace Finder
+          </a>
+          <a href="#community" class="hover:text-emerald-600 transition">Stories</a>
+        </nav>
+
+        <!-- Right Action Buttons -->
+        <div class="flex items-center gap-3">
+          <!-- My Schedule Drawer Trigger -->
+          <button onclick="toggleMyScheduleDrawer(true)"
+            class="relative p-2.5 text-slate-600 hover:text-emerald-600 hover:bg-slate-100 rounded-xl transition"
+            title="My Saved Activities">
+            <i class="fa-regular fa-bookmark text-lg"></i>
+            <span id="saved-count-badge"
+              class="absolute -top-1 -right-1 bg-emerald-600 text-white font-bold text-[10px] w-5 h-5 rounded-full flex items-center justify-center border-2 border-white shadow-sm">
+              0
+            </span>
+          </button>
+
+          <!-- Quick Join CTA -->
+          <button onclick="openRegistrationModal('General Church Activity')"
+            class="hidden sm:inline-flex items-center gap-2 bg-gradient-to-r from-emerald-600 to-teal-600 hover:from-emerald-700 hover:to-teal-700 text-white px-5 py-2.5 rounded-xl font-bold text-sm shadow-md shadow-emerald-600/20 hover:shadow-lg transition">
+            <i class="fa-solid fa-plus-circle"></i>
+            <span>Join an Activity</span>
+          </button>
+
+          <!-- Mobile Menu Button -->
+          <button id="mobile-menu-btn" onclick="toggleMobileMenu()"
+            class="lg:hidden p-2 text-slate-700 hover:text-emerald-600 hover:bg-slate-100 rounded-xl"
+            aria-label="Toggle menu">
+            <i class="fa-solid fa-bars text-xl"></i>
+          </button>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Mobile Drawer Menu -->
+    <div id="mobile-menu" class="hidden lg:hidden border-t border-slate-200 bg-white px-4 pt-3 pb-6 space-y-3">
+      <a href="#activities-explorer" onclick="toggleMobileMenu()"
+        class="block py-2 text-base font-semibold text-slate-700 hover:text-emerald-600">
+        <i class="fa-solid fa-calendar-days text-slate-400 mr-2"></i> All Church Activities
+      </a>
+      <a href="#running-ministry" onclick="toggleMobileMenu()"
+        class="block py-2 text-base font-semibold text-slate-700 hover:text-emerald-600">
+        <i class="fa-solid fa-person-running text-emerald-600 mr-2"></i> Faith & Stride Running Club
+      </a>
+      <a href="#featured-5k" onclick="toggleMobileMenu()"
+        class="block py-2 text-base font-semibold text-slate-700 hover:text-emerald-600">
+        <i class="fa-solid fa-medal text-amber-500 mr-2"></i> Annual 5K / 10K Charity Run
+      </a>
+      <a href="#schedule-view" onclick="toggleMobileMenu()"
+        class="block py-2 text-base font-semibold text-slate-700 hover:text-emerald-600">
+        <i class="fa-solid fa-clock text-slate-400 mr-2"></i> Weekly Schedule
+      </a>
+      <a href="#pace-finder" onclick="toggleMobileMenu()"
+        class="block py-2 text-base font-semibold text-slate-700 hover:text-emerald-600">
+        <i class="fa-solid fa-compass text-slate-400 mr-2"></i> Find Your Running Group
+      </a>
+      <a href="#community" onclick="toggleMobileMenu()"
+        class="block py-2 text-base font-semibold text-slate-700 hover:text-emerald-600">
+        <i class="fa-solid fa-heart text-rose-500 mr-2"></i> Community Stories
+      </a>
+      <div class="pt-2">
+        <button onclick="toggleMobileMenu(); openRegistrationModal('General Church Activity');"
+          class="w-full bg-emerald-600 hover:bg-emerald-700 text-white font-bold py-3 rounded-xl text-center shadow">
+          Join an Activity Today
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ================= HERO SECTION ================= -->
+  <section class="relative hero-gradient text-white overflow-hidden py-20 lg:py-28">
+    <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-transparent to-slate-900/60 pointer-events-none">
+    </div>
+
+    <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+
+        <div class="lg:col-span-8 space-y-6">
+          <div
+            class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-emerald-500/20 border border-emerald-400/40 text-emerald-300 text-xs sm:text-sm font-semibold backdrop-blur-md">
+            <span class="w-2 h-2 rounded-full bg-emerald-400 animate-ping"></span>
+            Faith • Fitness • Fellowship in Motion
+          </div>
+
+          <h1 class="font-display font-black text-4xl sm:text-5xl lg:text-6xl tracking-tight leading-[1.15]">
+            Run with Purpose. <br>
+            <span class="text-transparent bg-clip-text bg-gradient-to-r from-emerald-400 via-teal-300 to-amber-300">
+              Grow in Community.
+            </span>
+          </h1>
+
+          <p class="text-slate-300 text-base sm:text-lg lg:text-xl max-w-2xl leading-relaxed">
+            Welcome to the activities hub of GracePoint Church. From our weekly <strong>Faith & Stride</strong> running
+            groups and 5K training to worship, community outreach, and family youth clubs — discover active ways to live
+            out your faith.
+          </p>
+
+          <div class="flex flex-wrap items-center gap-4 pt-2">
+            <a href="#activities-explorer"
+              class="bg-emerald-500 hover:bg-emerald-400 text-slate-950 font-extrabold px-6 py-3.5 rounded-xl shadow-lg shadow-emerald-500/30 transition transform hover:-translate-y-0.5 inline-flex items-center gap-2">
+              <i class="fa-solid fa-person-running"></i>
+              <span>Explore Activities</span>
+            </a>
+
+            <a href="#featured-5k"
+              class="bg-white/10 hover:bg-white/20 text-white font-bold px-6 py-3.5 rounded-xl backdrop-blur-md border border-white/20 transition transform hover:-translate-y-0.5 inline-flex items-center gap-2">
+              <i class="fa-solid fa-flag-checkered text-amber-400"></i>
+              <span>Annual 5K Charity Run</span>
+            </a>
+
+            <button onclick="scrollToPaceFinder()"
+              class="text-slate-300 hover:text-white font-semibold text-sm px-3 py-2 flex items-center gap-1.5">
+              <i class="fa-solid fa-circle-question text-emerald-400"></i>
+              <span>Which running group fits me?</span>
+            </button>
+          </div>
+
+          <!-- Scripture Quotation -->
+          <div class="pt-4 border-t border-slate-700/60 max-w-xl">
+            <blockquote class="italic text-slate-300 text-sm flex items-start gap-2">
+              <i class="fa-solid fa-quote-left text-emerald-400 text-base mt-1"></i>
+              <span>"Let us run with perseverance the race marked out for us, fixing our eyes on Jesus, the pioneer and
+                perfecter of faith."</span>
+            </blockquote>
+            <p class="text-emerald-400 font-bold text-xs uppercase tracking-wider mt-1 text-right">— Hebrews 12:1-2
+            </p>
+          </div>
+        </div>
+
+        <!-- Quick Stats & Next Run Card -->
+        <div class="lg:col-span-4">
+          <div
+            class="bg-slate-900/80 backdrop-blur-xl border border-slate-700/80 rounded-3xl p-6 sm:p-7 shadow-2xl space-y-6">
+
+            <div class="flex items-center justify-between border-b border-slate-800 pb-4">
+              <div>
+                <span class="text-xs uppercase tracking-wider font-bold text-emerald-400">Next Upcoming Activity</span>
+                <h3 class="text-lg font-bold text-white mt-0.5">Saturday Sunrise Prayer Run</h3>
+              </div>
+              <div
+                class="w-10 h-10 rounded-xl bg-emerald-500/20 text-emerald-400 flex items-center justify-center font-bold text-sm">
+                <i class="fa-solid fa-calendar-day"></i>
+              </div>
+            </div>
+
+            <div class="space-y-3 text-sm">
+              <div class="flex items-center gap-3 text-slate-300">
+                <i class="fa-regular fa-clock text-amber-400 w-5 text-center"></i>
+                <span>This Saturday • <strong>7:00 AM – 8:30 AM</strong></span>
+              </div>
+              <div class="flex items-center gap-3 text-slate-300">
+                <i class="fa-solid fa-location-dot text-rose-400 w-5 text-center"></i>
+                <span>Grace Courtyard & Riverside Trail</span>
+              </div>
+              <div class="flex items-center gap-3 text-slate-300">
+                <i class="fa-solid fa-users text-emerald-400 w-5 text-center"></i>
+                <span>All paces: Walkers, 5K, & 10K groups</span>
+              </div>
+              <div class="flex items-center gap-3 text-slate-300">
+                <i class="fa-solid fa-mug-hot text-amber-400 w-5 text-center"></i>
+                <span>Complimentary coffee & breakfast fellowship after</span>
+              </div>
+            </div>
+
+            <button onclick="openRegistrationModal('Saturday Sunrise Prayer Run & Walk')"
+              class="w-full bg-emerald-500 hover:bg-emerald-400 text-slate-950 font-bold py-3 rounded-xl transition text-center shadow-md">
+              RSVP for This Saturday (Free)
+            </button>
+
+            <!-- Church Activity Vital Counters -->
+            <div class="grid grid-cols-3 gap-2 pt-2 border-t border-slate-800/80 text-center">
+              <div class="p-2 rounded-xl bg-slate-800/50">
+                <p class="font-display font-extrabold text-lg text-emerald-400">14+</p>
+                <p class="text-[11px] text-slate-400">Activities</p>
+              </div>
+              <div class="p-2 rounded-xl bg-slate-800/50">
+                <p class="font-display font-extrabold text-lg text-amber-400">5</p>
+                <p class="text-[11px] text-slate-400">Pace Groups</p>
+              </div>
+              <div class="p-2 rounded-xl bg-slate-800/50">
+                <p class="font-display font-extrabold text-lg text-teal-300">100%</p>
+                <p class="text-[11px] text-slate-400">Free & Open</p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= FEATURED RUNNING EVENT (5K / 10K SPOTLIGHT) ================= -->
+  <section id="featured-5k" class="py-16 bg-white border-b border-slate-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+      <div
+        class="relative rounded-3xl overflow-hidden bg-gradient-to-br from-slate-900 via-teal-950 to-emerald-950 text-white p-8 sm:p-12 shadow-2xl">
+        <!-- Background decorative pattern -->
+        <div class="absolute -right-24 -top-24 w-96 h-96 bg-emerald-500/10 rounded-full blur-3xl pointer-events-none">
+        </div>
+        <div class="absolute -left-24 -bottom-24 w-96 h-96 bg-amber-500/10 rounded-full blur-3xl pointer-events-none">
+        </div>
+
+        <div class="relative grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
+
+          <div class="lg:col-span-7 space-y-6">
+            <div
+              class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-amber-400/20 text-amber-300 text-xs font-bold border border-amber-400/30">
+              <i class="fa-solid fa-trophy"></i> Signature Annual Community Event
+            </div>
+
+            <h2 class="font-display font-black text-3xl sm:text-4xl lg:text-5xl text-white tracking-tight">
+              Grace Faith & Stride <br>
+              <span class="text-amber-400">5K & 10K Community Run</span>
+            </h2>
+
+            <p class="text-slate-300 text-base leading-relaxed">
+              Lace up your shoes for our biggest fellowship run of the year! Bring family, friends, and neighbors to run
+              or walk together along our scenic river trail. 100% of voluntary race donations support the <strong>Grace
+                Community Food Pantry</strong>.
+            </p>
+
+            <!-- Live Countdown Timer -->
+            <div>
+              <p class="text-xs font-bold uppercase tracking-wider text-emerald-400 mb-2">Race Day Countdown</p>
+              <div class="grid grid-cols-4 gap-2 sm:gap-4 max-w-md text-center" id="countdown-timer">
+                <div class="bg-slate-800/90 border border-slate-700 p-2 sm:p-3 rounded-2xl">
+                  <span id="days" class="block font-display font-black text-2xl sm:text-3xl text-white">24</span>
+                  <span class="text-[10px] sm:text-xs text-slate-400 uppercase font-semibold">Days</span>
+                </div>
+                <div class="bg-slate-800/90 border border-slate-700 p-2 sm:p-3 rounded-2xl">
+                  <span id="hours" class="block font-display font-black text-2xl sm:text-3xl text-white">18</span>
+                  <span class="text-[10px] sm:text-xs text-slate-400 uppercase font-semibold">Hours</span>
+                </div>
+                <div class="bg-slate-800/90 border border-slate-700 p-2 sm:p-3 rounded-2xl">
+                  <span id="minutes" class="block font-display font-black text-2xl sm:text-3xl text-white">42</span>
+                  <span class="text-[10px] sm:text-xs text-slate-400 uppercase font-semibold">Mins</span>
+                </div>
+                <div class="bg-slate-800/90 border border-slate-700 p-2 sm:p-3 rounded-2xl">
+                  <span id="seconds" class="block font-display font-black text-2xl sm:text-3xl text-amber-400">15</span>
+                  <span class="text-[10px] sm:text-xs text-slate-400 uppercase font-semibold">Secs</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Event perks chips -->
+            <div class="flex flex-wrap gap-2 text-xs font-semibold">
+              <span class="bg-slate-800/80 border border-slate-700 px-3 py-1.5 rounded-lg text-slate-200">
+                <i class="fa-solid fa-shirt text-amber-400 mr-1.5"></i> Free Event T-Shirt
+              </span>
+              <span class="bg-slate-800/80 border border-slate-700 px-3 py-1.5 rounded-lg text-slate-200">
+                <i class="fa-solid fa-medal text-emerald-400 mr-1.5"></i> Finisher Medals
+              </span>
+              <span class="bg-slate-800/80 border border-slate-700 px-3 py-1.5 rounded-lg text-slate-200">
+                <i class="fa-solid fa-apple-whole text-red-400 mr-1.5"></i> Post-Run Breakfast
+              </span>
+              <span class="bg-slate-800/80 border border-slate-700 px-3 py-1.5 rounded-lg text-slate-200">
+                <i class="fa-solid fa-stopwatch text-sky-400 mr-1.5"></i> Chip Timed & Walking Fun Run
+              </span>
+            </div>
+
+            <div class="pt-2 flex flex-wrap gap-4">
+              <button onclick="openRegistrationModal('Annual Faith & Stride 5K & 10K Run')"
+                class="bg-gradient-to-r from-amber-400 to-amber-500 hover:from-amber-300 hover:to-amber-400 text-slate-950 font-black px-7 py-3.5 rounded-xl shadow-lg shadow-amber-500/20 text-sm transition transform hover:scale-[1.02]">
+                Register Free for 5K / 10K
+              </button>
+              <button onclick="showRouteModal()"
+                class="bg-slate-800 hover:bg-slate-700 text-white font-semibold px-5 py-3.5 rounded-xl border border-slate-700 text-sm transition flex items-center gap-2">
+                <i class="fa-solid fa-map-location-dot text-emerald-400"></i>
+                <span>View Course Route & Trail</span>
+              </button>
+            </div>
+          </div>
+
+          <!-- Event visual card & Trail preview -->
+          <div class="lg:col-span-5 space-y-4">
+            <div class="bg-slate-800/90 rounded-2xl p-5 border border-slate-700 space-y-4 shadow-inner">
+              <div class="flex items-center justify-between">
+                <h4 class="font-bold text-white text-sm uppercase tracking-wider">
+                  <i class="fa-solid fa-shoe-prints text-emerald-400 mr-1.5"></i> Course Options
+                </h4>
+                <span class="text-xs bg-emerald-500/20 text-emerald-300 px-2 py-0.5 rounded font-bold">Paved &
+                  Trail</span>
+              </div>
+
+              <!-- Distance cards -->
+              <div class="grid grid-cols-3 gap-2">
+                <div class="bg-slate-900/90 p-3 rounded-xl border border-slate-700/80 text-center">
+                  <span class="text-xs text-slate-400 block font-medium">Family Fun</span>
+                  <span class="font-display font-black text-xl text-emerald-400">2K</span>
+                  <span class="text-[10px] text-slate-300 block">Stroll & Walk</span>
+                </div>
+                <div
+                  class="bg-slate-900/90 p-3 rounded-xl border border-emerald-500/50 text-center ring-1 ring-emerald-500/30">
+                  <span class="text-xs text-amber-400 block font-bold">Most Popular</span>
+                  <span class="font-display font-black text-xl text-white">5K</span>
+                  <span class="text-[10px] text-slate-300 block">Run or Walk</span>
+                </div>
+                <div class="bg-slate-900/90 p-3 rounded-xl border border-slate-700/80 text-center">
+                  <span class="text-xs text-slate-400 block font-medium">Challenge</span>
+                  <span class="font-display font-black text-xl text-teal-400">10K</span>
+                  <span class="text-[10px] text-slate-300 block">Trail Run</span>
+                </div>
+              </div>
+
+              <!-- Route Highlights -->
+              <div class="space-y-2 text-xs text-slate-300 pt-1">
+                <div class="flex items-start gap-2">
+                  <i class="fa-solid fa-flag text-emerald-400 mt-0.5"></i>
+                  <div><strong>Start & Finish:</strong> GracePoint Main Lawn & Pavilion</div>
+                </div>
+                <div class="flex items-start gap-2">
+                  <i class="fa-solid fa-water text-sky-400 mt-0.5"></i>
+                  <div><strong>Scenic:</strong> Follows the tree-lined Meadowbrook Greenway</div>
+                </div>
+                <div class="flex items-start gap-2">
+                  <i class="fa-solid fa-bottle-water text-amber-400 mt-0.5"></i>
+                  <div><strong>Hydration & Cheer:</strong> 3 water stations with youth cheering squads</div>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="bg-emerald-950/40 border border-emerald-800/40 rounded-xl p-3 text-xs text-emerald-200 flex items-center justify-between">
+              <span><i class="fa-solid fa-hand-holding-heart mr-1.5 text-emerald-400"></i> No entry fee. Optional food
+                donations accepted!</span>
+              <span class="font-bold underline cursor-pointer"
+                onclick="openRegistrationModal('Annual Faith & Stride 5K & 10K Run')">Sign Up</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ================= RUNNING MINISTRY OVERVIEW ================= -->
+  <section id="running-ministry" class="py-16 bg-slate-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+      <div class="text-center max-w-3xl mx-auto mb-12">
+        <span
+          class="text-xs font-extrabold uppercase tracking-widest text-emerald-600 bg-emerald-100 px-3 py-1 rounded-full">
+          Faith & Stride Ministry
+        </span>
+        <h2 class="font-display font-extrabold text-3xl sm:text-4xl text-slate-900 mt-3 tracking-tight">
+          Running, Walking & Fitness for Every Soul
+        </h2>
+        <p class="text-slate-600 mt-3 text-base">
+          Whether you’ve never run a step or you’re preparing for a full marathon, our running ministry is built on
+          encouragement, mutual support, and prayer. No one runs alone!
+        </p>
+      </div>
+
+      <!-- 4 Pillars of Our Running Ministry -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+
+        <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm hover:shadow-md transition">
+          <div
+            class="w-12 h-12 rounded-xl bg-emerald-100 text-emerald-700 flex items-center justify-center text-xl mb-4">
+            <i class="fa-solid fa-person-walking"></i>
+          </div>
+          <h3 class="font-bold text-lg text-slate-900">Walking & Couch-to-5K</h3>
+          <p class="text-slate-600 text-sm mt-2 leading-relaxed">
+            Gentle run-walk intervals designed for beginners, seniors, and parents with strollers. Build stamina at your
+            own comfortable pace.
+          </p>
+          <div
+            class="mt-4 pt-3 border-t border-slate-100 flex items-center justify-between text-xs font-semibold text-emerald-700">
+            <span>Pace: 12-16 min/mi</span>
+            <span>Saturdays 7:00 AM</span>
+          </div>
+        </div>
+
+        <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm hover:shadow-md transition">
+          <div class="w-12 h-12 rounded-xl bg-teal-100 text-teal-700 flex items-center justify-center text-xl mb-4">
+            <i class="fa-solid fa-person-running"></i>
+          </div>
+          <h3 class="font-bold text-lg text-slate-900">Community 5K Joggers</h3>
+          <p class="text-slate-600 text-sm mt-2 leading-relaxed">
+            Our most popular group! Social, conversational runs through scenic trails followed by devotional reflection
+            and coffee fellowship.
+          </p>
+          <div
+            class="mt-4 pt-3 border-t border-slate-100 flex items-center justify-between text-xs font-semibold text-teal-700">
+            <span>Pace: 9:30-11:30 min/mi</span>
+            <span>Sat & Tue</span>
+          </div>
+        </div>
+
+        <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm hover:shadow-md transition">
+          <div class="w-12 h-12 rounded-xl bg-amber-100 text-amber-700 flex items-center justify-center text-xl mb-4">
+            <i class="fa-solid fa-stopwatch-20"></i>
+          </div>
+          <h3 class="font-bold text-lg text-slate-900">Track & Speed Workouts</h3>
+          <p class="text-slate-600 text-sm mt-2 leading-relaxed">
+            Weekly interval training at the local high school track. Improve aerobic threshold, running form, and mental
+            perseverance.
+          </p>
+          <div
+            class="mt-4 pt-3 border-t border-slate-100 flex items-center justify-between text-xs font-semibold text-amber-700">
+            <span>All Levels Welcome</span>
+            <span>Thursdays 6:30 PM</span>
+          </div>
+        </div>
+
+        <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm hover:shadow-md transition">
+          <div class="w-12 h-12 rounded-xl bg-sky-100 text-sky-700 flex items-center justify-center text-xl mb-4">
+            <i class="fa-solid fa-mountain"></i>
+          </div>
+          <h3 class="font-bold text-lg text-slate-900">Endurance & Marathon Team</h3>
+          <p class="text-slate-600 text-sm mt-2 leading-relaxed">
+            Structured Saturday long runs (8 to 18 miles) for half and full marathoners, raising funds for water wells
+            and missionary projects.
+          </p>
+          <div
+            class="mt-4 pt-3 border-t border-slate-100 flex items-center justify-between text-xs font-semibold text-sky-700">
+            <span>Pace: 7:30-9:00 min/mi</span>
+            <span>Saturdays 6:00 AM</span>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ================= CHURCH ACTIVITIES EXPLORER ================= -->
+  <section id="activities-explorer" class="py-16 bg-white border-b border-slate-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+      <!-- Section Header -->
+      <div class="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-8">
+        <div>
+          <span
+            class="text-xs font-extrabold uppercase tracking-widest text-emerald-600 bg-emerald-50 border border-emerald-200 px-3 py-1 rounded-full">
+            Explore All Church Programs
+          </span>
+          <h2 class="font-display font-extrabold text-3xl sm:text-4xl text-slate-900 mt-2 tracking-tight">
+            Weekly Activities & Gatherings
+          </h2>
+          <p class="text-slate-600 mt-2 text-sm sm:text-base max-w-2xl">
+            Browse our full spectrum of running clubs, worship services, community charity outreaches, youth programs,
+            and small group studies.
+          </p>
+        </div>
+
+        <!-- View Switcher -->
+        <div class="flex items-center bg-slate-100 p-1.5 rounded-2xl border border-slate-200 self-start md:self-auto">
+          <button id="view-card-btn" onclick="switchView('card')"
+            class="px-4 py-2 rounded-xl text-xs sm:text-sm font-bold bg-white text-slate-900 shadow-sm transition flex items-center gap-2">
+            <i class="fa-solid fa-grip"></i> Card View
+          </button>
+          <button id="view-table-btn" onclick="switchView('table')"
+            class="px-4 py-2 rounded-xl text-xs sm:text-sm font-bold text-slate-600 hover:text-slate-900 transition flex items-center gap-2">
+            <i class="fa-solid fa-calendar-days"></i> Timetable View
+          </button>
+        </div>
+      </div>
+
+      <!-- Controls: Search & Category Filter Pills -->
+      <div class="space-y-4 mb-8">
+
+        <!-- Search Bar -->
+        <div class="relative">
+          <i class="fa-solid fa-magnifying-glass absolute left-4 top-1/2 -translate-y-1/2 text-slate-400"></i>
+          <input type="text" id="activity-search-input" oninput="handleSearch(this.value)"
+            placeholder="Search activities by keyword, day, location, or leader (e.g. '5K', 'Youth', 'Trail', 'Bible', 'Morning')..."
+            class="w-full pl-11 pr-24 py-3.5 bg-slate-50 border border-slate-300 rounded-2xl text-sm focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:bg-white transition">
+          <button id="clear-search-btn" onclick="clearSearch()"
+            class="hidden absolute right-3 top-1/2 -translate-y-1/2 text-xs font-semibold bg-slate-200 hover:bg-slate-300 text-slate-700 px-3 py-1.5 rounded-lg transition">
+            Clear
+          </button>
+        </div>
+
+        <!-- Category Pills (Horizontal Scrollable) -->
+        <div class="flex items-center gap-2 overflow-x-auto no-scrollbar py-1 text-xs font-bold" id="category-pills">
+          <button onclick="filterCategory('all')" data-category="all"
+            class="cat-pill active px-4 py-2 rounded-xl bg-slate-900 text-white shadow transition whitespace-nowrap">
+            All Activities (<span id="count-all">12</span>)
+          </button>
+          <button onclick="filterCategory('running')" data-category="running"
+            class="cat-pill px-4 py-2 rounded-xl bg-slate-100 hover:bg-slate-200 text-slate-700 transition whitespace-nowrap">
+            🏃 Running & Sports (<span id="count-running">5</span>)
+          </button>
+          <button onclick="filterCategory('worship')" data-category="worship"
+            class="cat-pill px-4 py-2 rounded-xl bg-slate-100 hover:bg-slate-200 text-slate-700 transition whitespace-nowrap">
+            🙏 Worship & Prayer (<span id="count-worship">2</span>)
+          </button>
+          <button onclick="filterCategory('outreach')" data-category="outreach"
+            class="cat-pill px-4 py-2 rounded-xl bg-slate-100 hover:bg-slate-200 text-slate-700 transition whitespace-nowrap">
+            🤝 Charity & Outreach (<span id="count-outreach">2</span>)
+          </button>
+          <button onclick="filterCategory('youth')" data-category="youth"
+            class="cat-pill px-4 py-2 rounded-xl bg-slate-100 hover:bg-slate-200 text-slate-700 transition whitespace-nowrap">
+            👶 Youth & Kids (<span id="count-youth">2</span>)
+          </button>
+          <button onclick="filterCategory('study')" data-category="study"
+            class="cat-pill px-4 py-2 rounded-xl bg-slate-100 hover:bg-slate-200 text-slate-700 transition whitespace-nowrap">
+            📖 Small Groups & Study (<span id="count-study">1</span>)
+          </button>
+        </div>
+
+        <!-- Day of the Week Filter -->
+        <div class="flex items-center gap-1.5 overflow-x-auto no-scrollbar text-xs font-semibold text-slate-600 pt-1">
+          <span class="text-slate-400 mr-1 text-[11px] uppercase tracking-wider font-bold">Filter Day:</span>
+          <button onclick="filterDay('all')" data-day="all"
+            class="day-pill px-3 py-1 rounded-lg bg-emerald-100 text-emerald-800 font-bold">Any Day</button>
+          <button onclick="filterDay('Sunday')" data-day="Sunday"
+            class="day-pill px-3 py-1 rounded-lg hover:bg-slate-100">Sunday</button>
+          <button onclick="filterDay('Tuesday')" data-day="Tuesday"
+            class="day-pill px-3 py-1 rounded-lg hover:bg-slate-100">Tuesday</button>
+          <button onclick="filterDay('Wednesday')" data-day="Wednesday"
+            class="day-pill px-3 py-1 rounded-lg hover:bg-slate-100">Wednesday</button>
+          <button onclick="filterDay('Thursday')" data-day="Thursday"
+            class="day-pill px-3 py-1 rounded-lg hover:bg-slate-100">Thursday</button>
+          <button onclick="filterDay('Friday')" data-day="Friday"
+            class="day-pill px-3 py-1 rounded-lg hover:bg-slate-100">Friday</button>
+          <button onclick="filterDay('Saturday')" data-day="Saturday"
+            class="day-pill px-3 py-1 rounded-lg hover:bg-slate-100">Saturday</button>
+        </div>
+
+      </div>
+
+      <!-- ================= CARD GRID CONTAINER ================= -->
+      <div id="card-view-container">
+        <!-- Dynamic Cards Grid injected via JS -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6" id="activities-grid">
+          <!-- Rendered by JavaScript -->
+        </div>
+
+        <!-- Empty State -->
+        <div id="no-results-state"
+          class="hidden text-center py-16 bg-slate-50 rounded-3xl border border-dashed border-slate-300">
+          <div
+            class="w-16 h-16 rounded-full bg-slate-200 text-slate-500 mx-auto flex items-center justify-center text-2xl mb-3">
+            <i class="fa-solid fa-person-running"></i>
+          </div>
+          <h3 class="text-lg font-bold text-slate-800">No activities match your filters</h3>
+          <p class="text-sm text-slate-500 mt-1 max-w-sm mx-auto">
+            Try adjusting your search keywords or switching category filters to see more activities.
+          </p>
+          <button onclick="resetFilters()"
+            class="mt-4 px-4 py-2 bg-emerald-600 hover:bg-emerald-700 text-white font-bold text-xs rounded-xl shadow">
+            Reset All Filters
+          </button>
+        </div>
+      </div>
+
+      <!-- ================= TIMETABLE VIEW CONTAINER ================= -->
+      <div id="table-view-container" class="hidden">
+        <div class="bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-sm">
+          <div class="p-4 bg-slate-900 text-white flex items-center justify-between">
+            <h3 class="font-bold text-sm tracking-wide">
+              <i class="fa-solid fa-calendar-check text-emerald-400 mr-2"></i> Weekly Church Schedule At-A-Glance
+            </h3>
+            <span class="text-xs text-slate-400">All times are local</span>
+          </div>
+
+          <div class="overflow-x-auto">
+            <table class="w-full text-left text-sm border-collapse">
+              <thead>
+                <tr class="bg-slate-50 text-slate-600 text-xs uppercase tracking-wider border-b border-slate-200">
+                  <th class="py-3.5 px-4 font-bold">Day & Time</th>
+                  <th class="py-3.5 px-4 font-bold">Activity</th>
+                  <th class="py-3.5 px-4 font-bold">Category</th>
+                  <th class="py-3.5 px-4 font-bold">Location</th>
+                  <th class="py-3.5 px-4 font-bold">Level / Pace</th>
+                  <th class="py-3.5 px-4 font-bold text-right">Action</th>
+                </tr>
+              </thead>
+              <tbody id="timetable-body" class="divide-y divide-slate-100 text-slate-700 text-xs sm:text-sm">
+                <!-- Rendered by JS -->
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ================= INTERACTIVE PACE & RUNNING GROUP MATCH WIDGET ================= -->
+  <section id="pace-finder" class="py-16 bg-gradient-to-b from-slate-50 to-emerald-50/40 border-b border-slate-200">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+
+      <div class="bg-white rounded-3xl p-6 sm:p-10 border border-emerald-100 shadow-xl shadow-emerald-900/5">
+
+        <div class="text-center max-w-xl mx-auto mb-8">
+          <span
+            class="text-xs font-extrabold uppercase tracking-wider text-emerald-700 bg-emerald-100 px-3 py-1 rounded-full">
+            Interactive Helper
+          </span>
+          <h2 class="font-display font-extrabold text-2xl sm:text-3xl text-slate-900 mt-2">
+            Find Your Ideal Running & Activity Group
+          </h2>
+          <p class="text-slate-600 text-sm mt-1">
+            Answer two quick questions to find the pace group and church activity tailored to your schedule and fitness
+            level!
+          </p>
+        </div>
+
+        <!-- Step 1: Fitness Goal / Pace -->
+        <div class="space-y-3 mb-6">
+          <label class="block text-xs font-bold uppercase tracking-wider text-slate-500">
+            1. What best describes your running or walking style?
+          </label>
+          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3">
+            <button onclick="selectPaceOption(this, 'walking')"
+              class="pace-btn active text-left p-3.5 rounded-2xl border-2 border-emerald-600 bg-emerald-50 text-slate-800 transition">
+              <span class="block font-bold text-sm text-emerald-900">🚶 Stroller & Walker</span>
+              <span class="text-xs text-slate-600">Gentle walking, recovery & fellowship</span>
+            </button>
+            <button onclick="selectPaceOption(this, 'beginner')"
+              class="pace-btn text-left p-3.5 rounded-2xl border-2 border-slate-200 hover:border-emerald-300 text-slate-800 transition">
+              <span class="block font-bold text-sm text-slate-900">👟 Beginner / 5K Jog</span>
+              <span class="text-xs text-slate-600">10–12 min/mile conversational pace</span>
+            </button>
+            <button onclick="selectPaceOption(this, 'intermediate')"
+              class="pace-btn text-left p-3.5 rounded-2xl border-2 border-slate-200 hover:border-emerald-300 text-slate-800 transition">
+              <span class="block font-bold text-sm text-slate-900">🏃 Regular Runner</span>
+              <span class="text-xs text-slate-600">8:30–10 min/mile, 5K to 10K</span>
+            </button>
+            <button onclick="selectPaceOption(this, 'speed')"
+              class="pace-btn text-left p-3.5 rounded-2xl border-2 border-slate-200 hover:border-emerald-300 text-slate-800 transition">
+              <span class="block font-bold text-sm text-slate-900">⚡ Track & Marathon</span>
+              <span class="text-xs text-slate-600">Sub 8:30 min/mile, long distances</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Step 2: Preferred Time -->
+        <div class="space-y-3 mb-8">
+          <label class="block text-xs font-bold uppercase tracking-wider text-slate-500">
+            2. When do you prefer to join activities?
+          </label>
+          <div class="grid grid-cols-1 sm:grid-cols-3 gap-3">
+            <button onclick="selectTimeOption(this, 'weekend')"
+              class="time-btn active text-left p-3.5 rounded-2xl border-2 border-emerald-600 bg-emerald-50 text-slate-800 transition">
+              <span class="block font-bold text-sm text-emerald-900">🌅 Saturday Mornings</span>
+              <span class="text-xs text-slate-600">7:00 AM Sunrise group runs & walk</span>
+            </button>
+            <button onclick="selectTimeOption(this, 'evening')"
+              class="time-btn text-left p-3.5 rounded-2xl border-2 border-slate-200 hover:border-emerald-300 text-slate-800 transition">
+              <span class="block font-bold text-sm text-slate-900">🌙 Weekday Evenings</span>
+              <span class="text-xs text-slate-600">Tue / Thu 6:30 PM Track & Trail</span>
+            </button>
+            <button onclick="selectTimeOption(this, 'sunday')"
+              class="time-btn text-left p-3.5 rounded-2xl border-2 border-slate-200 hover:border-emerald-300 text-slate-800 transition">
+              <span class="block font-bold text-sm text-slate-900">☀️ Sunday Services & Youth</span>
+              <span class="text-xs text-slate-600">Worship, Youth games, and family</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Result Box -->
+        <div id="match-result-card"
+          class="bg-gradient-to-r from-emerald-800 to-teal-900 text-white rounded-2xl p-6 flex flex-col sm:flex-row items-center justify-between gap-6">
+          <div>
+            <span
+              class="inline-block px-2.5 py-0.5 rounded-full bg-emerald-400 text-slate-950 font-extrabold text-[11px] uppercase tracking-wider mb-2">
+              Best Match For You
+            </span>
+            <h4 id="match-title" class="font-display font-extrabold text-xl text-white">
+              Saturday Sunrise Prayer Walk & 5K (Beginner Group)
+            </h4>
+            <p id="match-desc" class="text-xs sm:text-sm text-emerald-100 mt-1 max-w-xl">
+              Meet every Saturday at 7:00 AM at the Church Courtyard. Free coffee, warm-ups, and a designated walking
+              leader to ensure nobody walks alone!
+            </p>
+          </div>
+          <button id="match-cta-btn" onclick="openRegistrationModal('Saturday Sunrise Prayer Run & Walk')"
+            class="whitespace-nowrap bg-amber-400 hover:bg-amber-300 text-slate-950 font-bold px-6 py-3 rounded-xl text-xs sm:text-sm shadow-md transition">
+            Join This Group
+          </button>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ================= STORIES & TESTIMONIALS ================= -->
+  <section id="community" class="py-16 bg-white border-b border-slate-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+      <div class="text-center max-w-2xl mx-auto mb-12">
+        <span
+          class="text-xs font-extrabold uppercase tracking-widest text-emerald-600 bg-emerald-50 px-3 py-1 rounded-full">
+          Community In Action
+        </span>
+        <h2 class="font-display font-extrabold text-3xl text-slate-900 mt-2">
+          Stories of Faith & Fellowship
+        </h2>
+        <p class="text-slate-600 text-sm mt-1">
+          Hear how our church activities and running ministry are transforming health and spiritual lives.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+
+        <!-- Story 1 -->
+        <div class="bg-slate-50 rounded-2xl p-6 border border-slate-200 flex flex-col justify-between">
+          <div class="space-y-4">
+            <div class="flex items-center gap-1 text-amber-400 text-sm">
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            </div>
+            <p class="text-slate-700 text-sm leading-relaxed italic">
+              "I started with the beginner walking group after recovering from heart surgery. The encouragement and
+              weekly prayers kept me going. Last month, I completed my very first 5K!"
+            </p>
+          </div>
+          <div class="flex items-center gap-3 mt-6 pt-4 border-t border-slate-200/80">
+            <div
+              class="w-10 h-10 rounded-full bg-emerald-600 text-white font-bold flex items-center justify-center text-sm">
+              MD
+            </div>
+            <div>
+              <h4 class="font-bold text-sm text-slate-900">Marcus Davis</h4>
+              <p class="text-xs text-slate-500">Walking & 5K Ministry Member</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Story 2 -->
+        <div class="bg-slate-50 rounded-2xl p-6 border border-slate-200 flex flex-col justify-between">
+          <div class="space-y-4">
+            <div class="flex items-center gap-1 text-amber-400 text-sm">
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            </div>
+            <p class="text-slate-700 text-sm leading-relaxed italic">
+              "As a busy mom of three, Saturday mornings with Faith & Stride have been my sanctuary. I run with fellow
+              sisters in faith, pray for our families, and start the weekend renewed."
+            </p>
+          </div>
+          <div class="flex items-center gap-3 mt-6 pt-4 border-t border-slate-200/80">
+            <div
+              class="w-10 h-10 rounded-full bg-teal-600 text-white font-bold flex items-center justify-center text-sm">
+              SR
+            </div>
+            <div>
+              <h4 class="font-bold text-sm text-slate-900">Sarah Reynolds</h4>
+              <p class="text-xs text-slate-500">Saturday Jogger & Kids Volunteer</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Story 3 -->
+        <div class="bg-slate-50 rounded-2xl p-6 border border-slate-200 flex flex-col justify-between">
+          <div class="space-y-4">
+            <div class="flex items-center gap-1 text-amber-400 text-sm">
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            </div>
+            <p class="text-slate-700 text-sm leading-relaxed italic">
+              "We didn't attend church anywhere until we saw the 5K banner. Everyone was so welcoming and down to earth.
+              Now our whole family attends youth night and Sunday worship regularly!"
+            </p>
+          </div>
+          <div class="flex items-center gap-3 mt-6 pt-4 border-t border-slate-200/80">
+            <div
+              class="w-10 h-10 rounded-full bg-amber-600 text-white font-bold flex items-center justify-center text-sm">
+              JK
+            </div>
+            <div>
+              <h4 class="font-bold text-sm text-slate-900">The Jenkins Family</h4>
+              <p class="text-xs text-slate-500">Outreach & 5K Participants</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ================= VOLUNTEER & LEAD AN ACTIVITY ================= -->
+  <section class="py-16 bg-slate-900 text-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
+        <div>
+          <span class="text-xs font-bold uppercase tracking-wider text-emerald-400">Get Involved</span>
+          <h2 class="font-display font-extrabold text-3xl sm:text-4xl text-white mt-2">
+            Serve, Lead, or Marshall an Activity
+          </h2>
+          <p class="text-slate-300 text-sm sm:text-base mt-3 leading-relaxed">
+            Every church run, youth game, and outreach program thrives because of volunteers like you! Whether you want
+            to lead a pace group, hand out water at our 5K, serve coffee, or chaperone youth games, we’d love to have
+            you.
+          </p>
+          <div class="grid grid-cols-2 gap-4 mt-6">
+            <div class="flex items-center gap-3">
+              <div class="w-8 h-8 rounded-lg bg-emerald-500/20 text-emerald-400 flex items-center justify-center">
+                <i class="fa-solid fa-person-chalkboard"></i>
+              </div>
+              <span class="text-xs font-semibold text-slate-200">Pace Leaders</span>
+            </div>
+            <div class="flex items-center gap-3">
+              <div class="w-8 h-8 rounded-lg bg-emerald-500/20 text-emerald-400 flex items-center justify-center">
+                <i class="fa-solid fa-hand-holding-heart"></i>
+              </div>
+              <span class="text-xs font-semibold text-slate-200">5K Marshals</span>
+            </div>
+            <div class="flex items-center gap-3">
+              <div class="w-8 h-8 rounded-lg bg-emerald-500/20 text-emerald-400 flex items-center justify-center">
+                <i class="fa-solid fa-mug-saucer"></i>
+              </div>
+              <span class="text-xs font-semibold text-slate-200">Hospitality & Coffee</span>
+            </div>
+            <div class="flex items-center gap-3">
+              <div class="w-8 h-8 rounded-lg bg-emerald-500/20 text-emerald-400 flex items-center justify-center">
+                <i class="fa-solid fa-kit-medical"></i>
+              </div>
+              <span class="text-xs font-semibold text-slate-200">Trail Safety & First Aid</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="bg-slate-800/80 border border-slate-700 p-6 sm:p-8 rounded-3xl">
+          <h3 class="font-bold text-lg text-white mb-2">Volunteer Sign-Up</h3>
+          <p class="text-xs text-slate-400 mb-6">Tell us where you’d love to serve and our ministry coordinator will get
+            in touch.</p>
+
+          <form onsubmit="handleVolunteerSubmit(event)" class="space-y-4 text-xs">
+            <div>
+              <label class="block font-semibold text-slate-300 mb-1">Full Name</label>
+              <input type="text" required placeholder="John or Jane Doe"
+                class="w-full px-4 py-2.5 rounded-xl bg-slate-900 border border-slate-700 text-white focus:outline-none focus:ring-2 focus:ring-emerald-500">
+            </div>
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+              <div>
+                <label class="block font-semibold text-slate-300 mb-1">Email Address</label>
+                <input type="email" required placeholder="you@example.com"
+                  class="w-full px-4 py-2.5 rounded-xl bg-slate-900 border border-slate-700 text-white focus:outline-none focus:ring-2 focus:ring-emerald-500">
+              </div>
+              <div>
+                <label class="block font-semibold text-slate-300 mb-1">Phone Number</label>
+                <input type="tel" placeholder="(555) 000-0000"
+                  class="w-full px-4 py-2.5 rounded-xl bg-slate-900 border border-slate-700 text-white focus:outline-none focus:ring-2 focus:ring-emerald-500">
+              </div>
+            </div>
+            <div>
+              <label class="block font-semibold text-slate-300 mb-1">Preferred Volunteer Role</label>
+              <select
+                class="w-full px-4 py-2.5 rounded-xl bg-slate-900 border border-slate-700 text-white focus:outline-none focus:ring-2 focus:ring-emerald-500">
+                <option value="5K Race Volunteer">5K Race Day Marshall / Water Station</option>
+                <option value="Pace Leader">Running Club Pace Leader (Walk, 5K or 10K)</option>
+                <option value="Coffee & Breakfast">Hospitality / Post-Run Breakfast Team</option>
+                <option value="Youth Helper">Youth Track & Games Chaperone</option>
+                <option value="Outreach Helper">Food Pantry & Community Outreach</option>
+              </select>
+            </div>
+            <button type="submit"
+              class="w-full py-3 bg-emerald-500 hover:bg-emerald-400 text-slate-950 font-bold rounded-xl shadow transition text-sm">
+              Submit Volunteer Request
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= FAQ SECTION ================= -->
+  <section class="py-16 bg-white border-b border-slate-200">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-10">
+        <span
+          class="text-xs font-bold uppercase tracking-wider text-emerald-600 bg-emerald-50 px-3 py-1 rounded-full">Common
+          Questions</span>
+        <h2 class="font-display font-extrabold text-3xl text-slate-900 mt-2">Frequently Asked Questions</h2>
+      </div>
+
+      <div class="space-y-3" id="faq-accordion">
+
+        <div class="border border-slate-200 rounded-2xl overflow-hidden">
+          <button onclick="toggleFaq(this)"
+            class="w-full text-left p-4 sm:p-5 font-bold text-slate-800 text-sm sm:text-base flex items-center justify-between hover:bg-slate-50 transition">
+            <span>Are church running and sports activities free to join?</span>
+            <i class="fa-solid fa-chevron-down text-slate-400 text-xs transition-transform duration-200"></i>
+          </button>
+          <div
+            class="faq-content hidden px-5 pb-5 text-xs sm:text-sm text-slate-600 leading-relaxed border-t border-slate-100 pt-3">
+            Yes! 100% of our weekly running sessions, walks, and sports meetups are completely free and open to everyone
+            in the community. Our annual 5K race is also free to register, with optional voluntary donations supporting
+            our local food pantry.
+          </div>
+        </div>
+
+        <div class="border border-slate-200 rounded-2xl overflow-hidden">
+          <button onclick="toggleFaq(this)"
+            class="w-full text-left p-4 sm:p-5 font-bold text-slate-800 text-sm sm:text-base flex items-center justify-between hover:bg-slate-50 transition">
+            <span>Do I have to be an experienced runner or church member to participate?</span>
+            <i class="fa-solid fa-chevron-down text-slate-400 text-xs transition-transform duration-200"></i>
+          </button>
+          <div
+            class="faq-content hidden px-5 pb-5 text-xs sm:text-sm text-slate-600 leading-relaxed border-t border-slate-100 pt-3">
+            Not at all! We have dedicated walking and beginner groups with designated pace mentors so that nobody is
+            left behind. You do not need to be a church member — neighbors of all backgrounds, faiths, and fitness
+            levels are warmly welcomed.
+          </div>
+        </div>
+
+        <div class="border border-slate-200 rounded-2xl overflow-hidden">
+          <button onclick="toggleFaq(this)"
+            class="w-full text-left p-4 sm:p-5 font-bold text-slate-800 text-sm sm:text-base flex items-center justify-between hover:bg-slate-50 transition">
+            <span>Where do the group runs start and what should I bring?</span>
+            <i class="fa-solid fa-chevron-down text-slate-400 text-xs transition-transform duration-200"></i>
+          </button>
+          <div
+            class="faq-content hidden px-5 pb-5 text-xs sm:text-sm text-slate-600 leading-relaxed border-t border-slate-100 pt-3">
+            Our Saturday runs gather at the GracePoint Courtyard (outside the Main Fellowship Hall). Just bring
+            comfortable running or walking shoes and a water bottle. We provide hydration refills, snacks, and
+            complimentary coffee after every run.
+          </div>
+        </div>
+
+        <div class="border border-slate-200 rounded-2xl overflow-hidden">
+          <button onclick="toggleFaq(this)"
+            class="w-full text-left p-4 sm:p-5 font-bold text-slate-800 text-sm sm:text-base flex items-center justify-between hover:bg-slate-50 transition">
+            <span>What happens in case of rain or inclement weather?</span>
+            <i class="fa-solid fa-chevron-down text-slate-400 text-xs transition-transform duration-200"></i>
+          </button>
+          <div
+            class="faq-content hidden px-5 pb-5 text-xs sm:text-sm text-slate-600 leading-relaxed border-t border-slate-100 pt-3">
+            For light sprinkles, we usually still run! In case of thunderstorms, ice, or dangerous weather, activities
+            move inside to our gymnasium for indoor circuit walking, stretching, and fellowship. Weather updates are
+            posted on this site by 6:00 AM on Saturdays.
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= LOCATION & CONTACT ================= -->
+  <footer class="bg-slate-950 text-slate-300 pt-16 pb-12 border-t border-slate-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 pb-12 border-b border-slate-800">
+
+        <!-- Church info -->
+        <div class="space-y-4">
+          <div class="flex items-center gap-3">
+            <div
+              class="w-10 h-10 rounded-xl bg-emerald-600 flex items-center justify-center text-white font-bold text-lg">
+              <i class="fa-solid fa-person-running"></i>
+            </div>
+            <div>
+              <span class="font-display font-extrabold text-xl text-white">GracePoint</span>
+              <p class="text-[11px] text-emerald-400 font-semibold uppercase tracking-wider">Church Activities</p>
+            </div>
+          </div>
+          <p class="text-xs text-slate-400 leading-relaxed">
+            A welcoming community active in faith, fellowship, and healthy living. Running the race with endurance and
+            love.
+          </p>
+          <div class="flex items-center gap-3 text-slate-400 text-sm">
+            <a href="#"
+              class="w-8 h-8 rounded-lg bg-slate-900 hover:bg-emerald-600 hover:text-white flex items-center justify-center transition"><i
+                class="fa-brands fa-facebook-f"></i></a>
+            <a href="#"
+              class="w-8 h-8 rounded-lg bg-slate-900 hover:bg-emerald-600 hover:text-white flex items-center justify-center transition"><i
+                class="fa-brands fa-instagram"></i></a>
+            <a href="#"
+              class="w-8 h-8 rounded-lg bg-slate-900 hover:bg-emerald-600 hover:text-white flex items-center justify-center transition"><i
+                class="fa-brands fa-strava"></i></a>
+            <a href="#"
+              class="w-8 h-8 rounded-lg bg-slate-900 hover:bg-emerald-600 hover:text-white flex items-center justify-center transition"><i
+                class="fa-brands fa-youtube"></i></a>
+          </div>
+        </div>
+
+        <!-- Quick Links -->
+        <div>
+          <h4 class="font-bold text-sm text-white mb-4 uppercase tracking-wider">Activities</h4>
+          <ul class="space-y-2 text-xs">
+            <li><a href="#activities-explorer" class="hover:text-emerald-400 transition">Saturday Sunrise 5K Run</a>
+            </li>
+            <li><a href="#activities-explorer" class="hover:text-emerald-400 transition">Beginner Walking Group</a></li>
+            <li><a href="#activities-explorer" class="hover:text-emerald-400 transition">Tuesday Track Intervals</a>
+            </li>
+            <li><a href="#featured-5k" class="hover:text-emerald-400 transition">Annual 5K / 10K Charity Race</a></li>
+            <li><a href="#activities-explorer" class="hover:text-emerald-400 transition">Sunday Worship & Youth
+                Clubs</a></li>
+            <li><a href="#activities-explorer" class="hover:text-emerald-400 transition">Community Food Pantry</a></li>
+          </ul>
+        </div>
+
+        <!-- Meeting Times & Location -->
+        <div>
+          <h4 class="font-bold text-sm text-white mb-4 uppercase tracking-wider">Meetup Location</h4>
+          <ul class="space-y-2.5 text-xs text-slate-400">
+            <li class="flex items-start gap-2">
+              <i class="fa-solid fa-location-dot text-emerald-400 mt-0.5"></i>
+              <span>742 Evergreen Way, Meadowbrook Park<br>Fellowship Courtyard</span>
+            </li>
+            <li class="flex items-center gap-2">
+              <i class="fa-solid fa-phone text-emerald-400"></i>
+              <span>(555) 234-7890</span>
+            </li>
+            <li class="flex items-center gap-2">
+              <i class="fa-solid fa-envelope text-emerald-400"></i>
+              <span>activities@gracepointchurch.org</span>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Newsletter / Run Updates -->
+        <div>
+          <h4 class="font-bold text-sm text-white mb-4 uppercase tracking-wider">Weekly Activity Updates</h4>
+          <p class="text-xs text-slate-400 mb-3">
+            Receive weekly trail routes, devotionals, and weather announcements straight to your inbox.
+          </p>
+          <form onsubmit="handleNewsletter(event)" class="space-y-2">
+            <input type="email" required placeholder="Enter your email"
+              class="w-full px-3.5 py-2.5 rounded-xl bg-slate-900 border border-slate-700 text-xs text-white focus:outline-none focus:ring-1 focus:ring-emerald-500">
+            <button type="submit"
+              class="w-full bg-emerald-600 hover:bg-emerald-500 text-white font-bold py-2 rounded-xl text-xs transition">
+              Subscribe
+            </button>
+          </form>
+        </div>
+
+      </div>
+
+      <div class="pt-8 flex flex-col sm:flex-row items-center justify-between text-xs text-slate-500 gap-4">
+        <p>&copy; 2026 GracePoint Church Running & Community Ministry. All rights reserved.</p>
+        <p class="flex items-center gap-1">
+          <span>Run with endurance • Hebrews 12:1</span>
+        </p>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- ================= RSVP / REGISTRATION MODAL ================= -->
+  <div id="rsvp-modal" class="fixed inset-0 z-50 hidden overflow-y-auto" aria-labelledby="modal-title" role="dialog"
+    aria-modal="true">
+    <div class="fixed inset-0 bg-slate-950/70 backdrop-blur-sm transition-opacity" onclick="closeRegistrationModal()">
+    </div>
+
+    <div class="min-h-full flex items-center justify-center p-4">
+      <div
+        class="relative bg-white rounded-3xl max-w-lg w-full p-6 sm:p-8 shadow-2xl border border-slate-200 transform transition-all">
+
+        <!-- Modal Close Button -->
+        <button onclick="closeRegistrationModal()"
+          class="absolute top-5 right-5 text-slate-400 hover:text-slate-600 w-8 h-8 rounded-full hover:bg-slate-100 flex items-center justify-center transition">
+          <i class="fa-solid fa-xmark text-lg"></i>
+        </button>
+
+        <div class="flex items-center gap-3 mb-4">
+          <div class="w-10 h-10 rounded-xl bg-emerald-100 text-emerald-700 flex items-center justify-center text-lg">
+            <i class="fa-solid fa-person-running"></i>
+          </div>
+          <div>
+            <span class="text-xs font-bold uppercase tracking-wider text-emerald-600">Free Registration</span>
+            <h3 class="text-xl font-display font-extrabold text-slate-900" id="rsvp-modal-title">Join an Activity</h3>
+          </div>
+        </div>
+
+        <form id="rsvp-form" onsubmit="handleRegistrationSubmit(event)" class="space-y-4 text-xs sm:text-sm">
+
+          <div>
+            <label class="block font-bold text-slate-700 mb-1">Selected Activity</label>
+            <select id="modal-activity-select"
+              class="w-full px-3.5 py-2.5 rounded-xl bg-slate-50 border border-slate-300 font-semibold text-slate-800 focus:outline-none focus:ring-2 focus:ring-emerald-500">
+              <!-- Populated dynamically -->
+            </select>
+          </div>
+
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+            <div>
+              <label class="block font-bold text-slate-700 mb-1">Your Full Name *</label>
+              <input type="text" id="modal-user-name" required placeholder="Sarah Miller"
+                class="w-full px-3.5 py-2.5 rounded-xl border border-slate-300 focus:outline-none focus:ring-2 focus:ring-emerald-500">
+            </div>
+            <div>
+              <label class="block font-bold text-slate-700 mb-1">Email Address *</label>
+              <input type="email" id="modal-user-email" required placeholder="sarah@example.com"
+                class="w-full px-3.5 py-2.5 rounded-xl border border-slate-300 focus:outline-none focus:ring-2 focus:ring-emerald-500">
+            </div>
+          </div>
+
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+            <div>
+              <label class="block font-bold text-slate-700 mb-1">Phone (Optional for SMS updates)</label>
+              <input type="tel" id="modal-user-phone" placeholder="(555) 123-4567"
+                class="w-full px-3.5 py-2.5 rounded-xl border border-slate-300 focus:outline-none focus:ring-2 focus:ring-emerald-500">
+            </div>
+            <div>
+              <label class="block font-bold text-slate-700 mb-1">Experience / Pace Group</label>
+              <select id="modal-user-pace"
+                class="w-full px-3.5 py-2.5 rounded-xl border border-slate-300 focus:outline-none focus:ring-2 focus:ring-emerald-500">
+                <option value="Walker / Beginner">Walker / Beginner (No rush)</option>
+                <option value="Casual 5K (10-12 min/mi)">Casual 5K (10-12 min/mi)</option>
+                <option value="Regular 5K-10K (8:30-10 min/mi)">Regular 5K-10K (8:30-10 min/mi)</option>
+                <option value="Experienced Runner (<8:30 min/mi)">Experienced Runner (&lt;8:30 min/mi)</option>
+                <option value="Non-Running Activity">Non-Running / Fellowship</option>
+              </select>
+            </div>
+          </div>
+
+          <div>
+            <label class="block font-bold text-slate-700 mb-1">Emergency Contact or Prayer Requests (Optional)</label>
+            <textarea id="modal-user-notes" rows="2" placeholder="Emergency contact number or prayer intentions..."
+              class="w-full px-3.5 py-2 rounded-xl border border-slate-300 focus:outline-none focus:ring-2 focus:ring-emerald-500 text-xs"></textarea>
+          </div>
+
+          <div
+            class="bg-emerald-50 p-3 rounded-xl border border-emerald-200 text-xs text-emerald-800 flex items-start gap-2">
+            <i class="fa-solid fa-circle-info text-emerald-600 mt-0.5"></i>
+            <span>No fee or payment required. Free refreshments and supportive fellowship provided at all events!</span>
+          </div>
+
+          <div class="pt-2 flex items-center justify-end gap-3">
+            <button type="button" onclick="closeRegistrationModal()"
+              class="px-4 py-2.5 rounded-xl border border-slate-300 text-slate-600 font-semibold hover:bg-slate-50 transition">
+              Cancel
+            </button>
+            <button type="submit"
+              class="px-6 py-2.5 rounded-xl bg-emerald-600 hover:bg-emerald-700 text-white font-bold shadow-md shadow-emerald-600/20 transition">
+              Confirm & Join Activity
+            </button>
+          </div>
+
+        </form>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- ================= ROUTE MAP PREVIEW MODAL ================= -->
+  <div id="route-modal" class="fixed inset-0 z-50 hidden overflow-y-auto" role="dialog" aria-modal="true">
+    <div class="fixed inset-0 bg-slate-950/75 backdrop-blur-sm" onclick="closeRouteModal()"></div>
+
+    <div class="min-h-full flex items-center justify-center p-4">
+      <div class="relative bg-white rounded-3xl max-w-2xl w-full p-6 sm:p-8 shadow-2xl border border-slate-200">
+        <button onclick="closeRouteModal()"
+          class="absolute top-5 right-5 text-slate-400 hover:text-slate-600 w-8 h-8 rounded-full hover:bg-slate-100 flex items-center justify-center transition">
+          <i class="fa-solid fa-xmark text-lg"></i>
+        </button>
+
+        <div class="flex items-center gap-2 text-emerald-600 font-bold text-xs uppercase tracking-wider mb-1">
+          <i class="fa-solid fa-route"></i> Course Guide
+        </div>
+        <h3 class="text-xl sm:text-2xl font-display font-extrabold text-slate-900 mb-2">
+          Faith & Stride 5K & 10K Scenic Trail Route
+        </h3>
+        <p class="text-slate-600 text-xs sm:text-sm mb-4">
+          Starts at the GracePoint Courtyard, loops through scenic Meadowbrook Park, alongside the river trail, and
+          returns for the celebration finish line!
+        </p>
+
+        <!-- Visual SVG Map Representation -->
+        <div
+          class="w-full h-56 bg-gradient-to-br from-emerald-900 to-slate-900 rounded-2xl relative overflow-hidden flex items-center justify-center border border-slate-300">
+          <svg class="w-full h-full p-4" viewBox="0 0 500 220" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <!-- River -->
+            <path d="M 0 160 C 150 140, 250 190, 500 150" stroke="#0284c7" stroke-width="24" stroke-opacity="0.3"
+              stroke-linecap="round" />
+            <path d="M 0 160 C 150 140, 250 190, 500 150" stroke="#38bdf8" stroke-width="4" stroke-dasharray="8 6" />
+
+            <!-- 5K Route Line -->
+            <path id="route-path"
+              d="M 60 70 C 120 40, 180 50, 240 80 C 300 110, 360 90, 420 120 C 380 160, 280 150, 200 130 C 120 110, 80 130, 60 70 Z"
+              stroke="#10b981" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"
+              fill="rgba(16, 185, 129, 0.08)" />
+
+            <!-- Start / Finish Icon -->
+            <circle cx="60" cy="70" r="10" fill="#f59e0b" stroke="#ffffff" stroke-width="3" />
+            <text x="60" y="45" fill="#f59e0b" font-size="11" font-weight="bold" text-anchor="middle">Start & Finish
+              (Church)</text>
+
+            <!-- Water Station 1 -->
+            <circle cx="240" cy="80" r="7" fill="#38bdf8" stroke="#ffffff" stroke-width="2" />
+            <text x="240" y="65" fill="#e2e8f0" font-size="10" text-anchor="middle">💧 Water Station 1</text>
+
+            <!-- Turnaround Point -->
+            <circle cx="420" cy="120" r="7" fill="#ef4444" stroke="#ffffff" stroke-width="2" />
+            <text x="420" y="145" fill="#fca5a5" font-size="10" font-weight="bold" text-anchor="middle">5K Loop
+              Turn</text>
+
+            <!-- Water Station 2 -->
+            <circle cx="200" cy="130" r="7" fill="#38bdf8" stroke="#ffffff" stroke-width="2" />
+            <text x="200" y="155" fill="#e2e8f0" font-size="10" text-anchor="middle">💧 Water Station 2</text>
+          </svg>
+
+          <!-- Map Legend Overlay -->
+          <div
+            class="absolute bottom-2 left-3 bg-slate-950/80 backdrop-blur-md px-3 py-1.5 rounded-lg text-[10px] text-slate-300 flex items-center gap-3">
+            <span class="flex items-center gap-1"><span class="w-2.5 h-2.5 rounded-full bg-emerald-400"></span> 5K
+              Loop</span>
+            <span class="flex items-center gap-1"><span class="w-2.5 h-2.5 rounded-full bg-amber-400"></span> Church
+              Grounds</span>
+            <span class="flex items-center gap-1"><span class="w-2.5 h-2.5 rounded-full bg-sky-400"></span> River
+              Trail</span>
+          </div>
+        </div>
+
+        <div class="grid grid-cols-3 gap-3 mt-4 text-center">
+          <div class="bg-slate-50 p-2.5 rounded-xl border border-slate-200">
+            <span class="text-xs text-slate-500 block">Total Elevation</span>
+            <span class="font-bold text-slate-800 text-sm">65 ft (Very Flat)</span>
+          </div>
+          <div class="bg-slate-50 p-2.5 rounded-xl border border-slate-200">
+            <span class="text-xs text-slate-500 block">Trail Surface</span>
+            <span class="font-bold text-slate-800 text-sm">Paved & Soft Gravel</span>
+          </div>
+          <div class="bg-slate-50 p-2.5 rounded-xl border border-slate-200">
+            <span class="text-xs text-slate-500 block">Stroller Friendly?</span>
+            <span class="font-bold text-emerald-600 text-sm">Yes (100%)</span>
+          </div>
+        </div>
+
+        <div class="mt-6 flex justify-end gap-3">
+          <button onclick="closeRouteModal()"
+            class="px-4 py-2 border border-slate-300 rounded-xl text-slate-600 text-xs font-semibold">
+            Close
+          </button>
+          <button onclick="closeRouteModal(); openRegistrationModal('Annual Faith & Stride 5K & 10K Run');"
+            class="px-5 py-2 bg-emerald-600 hover:bg-emerald-700 text-white rounded-xl text-xs font-bold shadow">
+            Register for This Course
+          </button>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- ================= MY SAVED ACTIVITIES DRAWER ================= -->
+  <div id="my-schedule-drawer" class="fixed inset-0 z-50 hidden" aria-labelledby="slide-over-title" role="dialog"
+    aria-modal="true">
+    <div class="fixed inset-0 bg-slate-900/60 backdrop-blur-xs transition-opacity"
+      onclick="toggleMyScheduleDrawer(false)"></div>
+
+    <div class="fixed inset-y-0 right-0 max-w-full flex pl-10">
+      <div class="w-screen max-w-md bg-white shadow-2xl flex flex-col">
+
+        <!-- Drawer Header -->
+        <div class="p-6 bg-slate-900 text-white flex items-center justify-between">
+          <div class="flex items-center gap-2">
+            <i class="fa-solid fa-bookmark text-emerald-400 text-lg"></i>
+            <div>
+              <h3 class="font-display font-bold text-lg leading-tight">My Registered Activities</h3>
+              <p class="text-xs text-slate-400">Your personalized church schedule</p>
+            </div>
+          </div>
+          <button onclick="toggleMyScheduleDrawer(false)" class="text-slate-400 hover:text-white p-2 rounded-xl">
+            <i class="fa-solid fa-xmark text-lg"></i>
+          </button>
+        </div>
+
+        <!-- Drawer Content List -->
+        <div class="flex-1 overflow-y-auto p-6 space-y-4" id="saved-activities-list">
+          <!-- Populated by JS -->
+        </div>
+
+        <!-- Drawer Footer -->
+        <div class="p-6 bg-slate-50 border-t border-slate-200 space-y-3">
+          <button onclick="exportToICalendar()"
+            class="w-full bg-emerald-600 hover:bg-emerald-700 text-white font-bold py-3 rounded-xl text-xs sm:text-sm flex items-center justify-center gap-2 shadow">
+            <i class="fa-regular fa-calendar-plus"></i>
+            <span>Add to Calendar (.ics download)</span>
+          </button>
+          <button onclick="clearAllSaved()"
+            class="w-full text-slate-500 hover:text-rose-600 font-semibold text-xs py-1 transition text-center">
+            Clear My List
+          </button>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- ================= TOAST NOTIFICATION CONTAINER ================= -->
+  <div id="toast-container" class="fixed bottom-6 right-6 z-50 flex flex-col gap-2 pointer-events-none"></div>
+
+  <!-- ================= JAVASCRIPT APPLICATION LOGIC ================= -->
+  <script>
+    /* ============================================================
+       CHURCH ACTIVITIES DATABASE
+       Covers running & fitness ministry + broad church life
+       ============================================================ */
+    const ACTIVITIES_DATA = [
+      {
+        id: "sat-5k-run",
+        title: "Saturday Sunrise Prayer Run & Walk",
+        category: "running",
+        categoryName: "Running & Fitness",
+        badgeColor: "emerald",
+        day: "Saturday",
+        time: "7:00 AM – 8:30 AM",
+        location: "Grace Courtyard & River Trail",
+        pace: "All Paces (Walkers, 5K & 10K)",
+        image: "https://images.unsplash.com/photo-1476480862126-209bfaa8edc8?q=80&w=800&auto=format&fit=crop",
+        description: "Our core weekly fellowship run! Starts with a 5-minute morning devotional prayer, followed by guided trail loops for walkers and runners. Concludes with hot coffee & fresh bagels.",
+        leader: "Coach Dave & Deacon Sarah",
+        isPopular: true
+      },
+      {
+        id: "annual-5k-charity",
+        title: "Annual Faith & Stride 5K & 10K Run",
+        category: "running",
+        categoryName: "Signature Event",
+        badgeColor: "amber",
+        day: "Saturday",
+        time: "8:00 AM – 11:30 AM",
+        location: "GracePoint Grounds & Meadowbrook Park",
+        pace: "2K Walk, 5K Run, 10K Challenge",
+        image: "https://images.unsplash.com/photo-1552674605-db6ffd4facb5?q=80&w=800&auto=format&fit=crop",
+        description: "Our community-wide charity event benefitting the Grace Community Food Bank. Chip timing, medals, free shirts, kids fun run, and community barbecue after!",
+        leader: "Ministry Events Team",
+        isPopular: true
+      },
+      {
+        id: "sun-worship",
+        title: "Sunday Celebration & Worship Service",
+        category: "worship",
+        categoryName: "Worship & Word",
+        badgeColor: "sky",
+        day: "Sunday",
+        time: "9:00 AM & 11:00 AM",
+        location: "Main Sanctuary & Online Live",
+        pace: "All Welcome",
+        image: "https://images.unsplash.com/photo-1438232992991-995b7058bbb3?q=80&w=800&auto=format&fit=crop",
+        description: "Inspiring uplifting contemporary praise music, biblical encouragement, and heartfelt fellowship. Children's church ministry available during both services.",
+        leader: "Senior Pastor Thomas",
+        isPopular: true
+      },
+      {
+        id: "tue-track-night",
+        title: "Tuesday Twilight Trail & Track Intervals",
+        category: "running",
+        categoryName: "Running & Fitness",
+        badgeColor: "emerald",
+        day: "Tuesday",
+        time: "6:30 PM – 7:45 PM",
+        location: "Meadowbrook High School Track",
+        pace: "Speed Work & Form (All Levels)",
+        image: "https://images.unsplash.com/photo-1571008887538-b36bb32f4571?q=80&w=800&auto=format&fit=crop",
+        description: "Fun, coach-led interval workout focusing on running technique, breathing rhythm, and stamina. A supportive atmosphere where everyone runs at their own target speed.",
+        leader: "Coach Elena Vance",
+        isPopular: false
+      },
+      {
+        id: "couch-to-5k",
+        title: "Couch-to-5K Beginner Running Clinic",
+        category: "running",
+        categoryName: "Running Clinic",
+        badgeColor: "emerald",
+        day: "Thursday",
+        time: "6:00 PM – 7:00 PM",
+        location: "Church Lawn & Soft Path",
+        pace: "Beginners & Walk-to-Run",
+        image: "https://images.unsplash.com/photo-1502680390469-be75c86b636f?q=80&w=800&auto=format&fit=crop",
+        description: "A gentle 8-week structured program for those who have never run before. Gradual run-walk progressions, injury prevention tips, and encouraging mentors.",
+        leader: "Mark & Lisa Jenkins",
+        isPopular: false
+      },
+      {
+        id: "youth-sports-night",
+        title: "Kingdom Kids & Youth Track Night",
+        category: "youth",
+        categoryName: "Youth & Kids",
+        badgeColor: "amber",
+        day: "Wednesday",
+        time: "5:30 PM – 7:00 PM",
+        location: "Church Gymnasium & Field",
+        pace: "Ages 6 to 16",
+        image: "https://images.unsplash.com/photo-1526676037777-05a232554f77?q=80&w=800&auto=format&fit=crop",
+        description: "Fun relay races, obstacle courses, agility games, and biblical character-building lessons for children and teens. Healthy snacks provided.",
+        leader: "Youth Pastor Caleb",
+        isPopular: true
+      },
+      {
+        id: "food-pantry-outreach",
+        title: "Community Food Pantry & Mobile Bread",
+        category: "outreach",
+        categoryName: "Charity & Outreach",
+        badgeColor: "teal",
+        day: "Thursday",
+        time: "10:00 AM – 2:00 PM",
+        location: "Community Center Annex",
+        pace: "Volunteer Activity",
+        image: "https://images.unsplash.com/photo-1593113598332-cd288d649433?q=80&w=800&auto=format&fit=crop",
+        description: "Distributing nutritious groceries, fresh produce, and prayer to local families in need. Runners often help with the morning box delivery rounds!",
+        leader: "Sister Martha & Volunteers",
+        isPopular: true
+      },
+      {
+        id: "seniors-morning-walk",
+        title: "Golden Strides: Seniors Walking Circle",
+        category: "running",
+        categoryName: "Running & Fitness",
+        badgeColor: "emerald",
+        day: "Tuesday",
+        time: "8:30 AM – 9:30 AM",
+        location: "Meadowbrook Botanical Gardens",
+        pace: "Gentle Paved Walk",
+        image: "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?q=80&w=800&auto=format&fit=crop",
+        description: "A refreshing, low-impact morning stroll on flat paved trails, followed by devotional reflection, herbal tea, and fellowship for older adults.",
+        leader: "Pastor Grace",
+        isPopular: false
+      },
+      {
+        id: "wed-prayer-revival",
+        title: "Midweek Prayer & Worship Revival",
+        category: "worship",
+        categoryName: "Worship & Word",
+        badgeColor: "sky",
+        day: "Wednesday",
+        time: "7:00 PM – 8:15 PM",
+        location: "Chapel & Zoom",
+        pace: "Spiritual Gathering",
+        image: "https://images.unsplash.com/photo-1507692049790-de58290a4334?q=80&w=800&auto=format&fit=crop",
+        description: "Recharge your spiritual battery mid-week with acoustic worship, Scripture meditation, and dedicated group prayers for our city and community.",
+        leader: "Worship Leader Samuel",
+        isPopular: false
+      },
+      {
+        id: "street-outreach-runs",
+        title: "Stride For Hope: Street Mission",
+        category: "outreach",
+        categoryName: "Charity & Outreach",
+        badgeColor: "teal",
+        day: "Friday",
+        time: "6:00 PM – 8:00 PM",
+        location: "Downtown Outreach Center",
+        pace: "Walking & Distribution",
+        image: "https://images.unsplash.com/photo-1469571486292-0ba58a3f068b?q=80&w=800&auto=format&fit=crop",
+        description: "Volunteers walk and jog through downtown streets carrying backpacks of socks, bottled water, hygiene kits, and hot meals to unhoused neighbors.",
+        leader: "Outreach Director Paul",
+        isPopular: false
+      },
+      {
+        id: "friday-small-group",
+        title: "Faith & Fitness Bible Study",
+        category: "study",
+        categoryName: "Bible Study",
+        badgeColor: "amber",
+        day: "Friday",
+        time: "6:00 PM – 7:30 PM",
+        location: "Courtyard Fireside Room",
+        pace: "Discussion & Fellowship",
+        image: "https://images.unsplash.com/photo-1529070538774-1843cb3265df?q=80&w=800&auto=format&fit=crop",
+        description: "Discussing biblical parallels between physical running endurance and spiritual steadfastness. Coffee and homemade dessert provided each week.",
+        leader: "Brothers & Sisters Fellowship",
+        isPopular: false
+      },
+      {
+        id: "teens-youth-club",
+        title: "High School Ignite Youth Night",
+        category: "youth",
+        categoryName: "Youth & Kids",
+        badgeColor: "amber",
+        day: "Sunday",
+        time: "6:00 PM – 8:00 PM",
+        location: "Youth Hall & Outdoor Patio",
+        pace: "Ages 14 to 18",
+        image: "https://images.unsplash.com/photo-1511632765486-a01980e01a18?q=80&w=800&auto=format&fit=crop",
+        description: "High energy sports, dodgeball, ping pong, live student worship, small group talks, and mentoring for high schoolers navigating life and faith.",
+        leader: "Pastor Caleb & Leaders",
+        isPopular: true
+      }
+    ];
+
+    /* ============================================================
+       APPLICATION STATE
+       ============================================================ */
+    let currentCategory = 'all';
+    let currentDay = 'all';
+    let searchQuery = '';
+    let currentView = 'card';
+    let savedActivities = JSON.parse(localStorage.getItem('gracepoint_saved_activities') || '[]');
+
+    /* ============================================================
+       INITIALIZATION
+       ============================================================ */
+    document.addEventListener('DOMContentLoaded', () => {
+      renderActivities();
+      renderTimetable();
+      populateActivitySelect();
+      updateSavedBadge();
+      initCountdown();
+      updateCategoryCounts();
+    });
+
+    /* ============================================================
+       RENDER ACTIVITIES CARDS
+       ============================================================ */
+    function renderActivities() {
+      const grid = document.getElementById('activities-grid');
+      const emptyState = document.getElementById('no-results-state');
+
+      // Filter activities based on state
+      const filtered = ACTIVITIES_DATA.filter(item => {
+        const matchesCategory = (currentCategory === 'all' || item.category === currentCategory);
+        const matchesDay = (currentDay === 'all' || item.day.toLowerCase() === currentDay.toLowerCase());
+        const matchesSearch = searchQuery === '' ||
+          item.title.toLowerCase().includes(searchQuery.toLowerCase()) ||
+          item.description.toLowerCase().includes(searchQuery.toLowerCase()) ||
+          item.location.toLowerCase().includes(searchQuery.toLowerCase()) ||
+          item.day.toLowerCase().includes(searchQuery.toLowerCase()) ||
+          item.pace.toLowerCase().includes(searchQuery.toLowerCase());
+
+        return matchesCategory && matchesDay && matchesSearch;
+      });
+
+      if (filtered.length === 0) {
+        grid.innerHTML = '';
+        emptyState.classList.remove('hidden');
+        return;
+      }
+
+      emptyState.classList.add('hidden');
+
+      grid.innerHTML = filtered.map(act => {
+        const isSaved = savedActivities.some(a => a.id === act.id);
+
+        // Category styling
+        let badgeBg = "bg-emerald-100 text-emerald-800 border-emerald-200";
+        if (act.category === 'worship') badgeBg = "bg-sky-100 text-sky-800 border-sky-200";
+        if (act.category === 'outreach') badgeBg = "bg-teal-100 text-teal-800 border-teal-200";
+        if (act.category === 'youth') badgeBg = "bg-amber-100 text-amber-800 border-amber-200";
+        if (act.category === 'study') badgeBg = "bg-purple-100 text-purple-800 border-purple-200";
+
+        return `
+          <div class="bg-white rounded-3xl border border-slate-200/90 overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col group">
+            
+            <!-- Card Image & Overlay -->
+            <div class="relative h-48 w-full overflow-hidden bg-slate-900">
+              <img 
+                src="${act.image}" 
+                alt="${act.title}" 
+                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 opacity-90"
+                loading="lazy"
+              >
+              <div class="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-slate-950/20 to-transparent"></div>
+
+              <!-- Top badges -->
+              <div class="absolute top-3 left-3 flex items-center gap-2">
+                <span class="text-xs font-bold px-2.5 py-1 rounded-full border shadow-sm ${badgeBg}">
+                  ${act.categoryName}
+                </span>
+                ${act.isPopular ? `
+                  <span class="text-xs font-bold px-2 py-0.5 rounded-full bg-amber-400 text-slate-950 shadow-sm flex items-center gap-1">
+                    <i class="fa-solid fa-fire text-[10px]"></i> Popular
+                  </span>
+                ` : ''}
+              </div>
+
+              <!-- Bookmark quick toggle -->
+              <button 
+                onclick="toggleSaveActivity('${act.id}', event)" 
+                class="absolute top-3 right-3 w-8 h-8 rounded-full ${isSaved ? 'bg-emerald-600 text-white' : 'bg-slate-900/60 text-white hover:bg-slate-900'} backdrop-blur-md flex items-center justify-center transition shadow"
+                title="${isSaved ? 'Remove from My Plan' : 'Save to My Plan'}"
+              >
+                <i class="${isSaved ? 'fa-solid' : 'fa-regular'} fa-bookmark text-xs"></i>
+              </button>
+
+              <!-- Day & Time on Image Bottom -->
+              <div class="absolute bottom-3 left-3 right-3 flex items-center justify-between text-white text-xs font-medium">
+                <span class="bg-slate-900/80 backdrop-blur-md px-2.5 py-1 rounded-lg">
+                  <i class="fa-regular fa-calendar mr-1 text-emerald-400"></i> ${act.day}
+                </span>
+                <span class="bg-slate-900/80 backdrop-blur-md px-2.5 py-1 rounded-lg">
+                  <i class="fa-regular fa-clock mr-1 text-amber-400"></i> ${act.time}
+                </span>
+              </div>
+            </div>
+
+            <!-- Card Content Body -->
+            <div class="p-6 flex-1 flex flex-col justify-between space-y-4">
+              
+              <div>
+                <h3 class="font-display font-extrabold text-lg text-slate-900 group-hover:text-emerald-700 transition leading-snug">
+                  ${act.title}
+                </h3>
+                
+                <p class="text-slate-600 text-xs sm:text-sm mt-2 line-clamp-2 leading-relaxed">
+                  ${act.description}
+                </p>
+
+                <!-- Activity Details Micro-List -->
+                <div class="mt-4 pt-3 border-t border-slate-100 space-y-2 text-xs text-slate-600">
+                  <div class="flex items-center gap-2">
+                    <i class="fa-solid fa-location-dot text-rose-500 w-4 text-center"></i>
+                    <span class="truncate"><strong>Location:</strong> ${act.location}</span>
+                  </div>
+                  <div class="flex items-center gap-2">
+                    <i class="fa-solid fa-shoe-prints text-emerald-600 w-4 text-center"></i>
+                    <span class="truncate"><strong>Pace/Level:</strong> ${act.pace}</span>
+                  </div>
+                  <div class="flex items-center gap-2">
+                    <i class="fa-solid fa-user-tie text-slate-400 w-4 text-center"></i>
+                    <span class="truncate"><strong>Host:</strong> ${act.leader}</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Card Action Buttons -->
+              <div class="pt-2 flex items-center gap-2">
+                <button 
+                  onclick="openRegistrationModal('${act.title}')" 
+                  class="flex-1 bg-emerald-600 hover:bg-emerald-700 text-white font-bold py-2.5 rounded-xl text-xs shadow-sm transition flex items-center justify-center gap-1.5"
+                >
+                  <i class="fa-solid fa-check"></i>
+                  <span>RSVP / Join</span>
+                </button>
+                <button 
+                  onclick="toggleSaveActivity('${act.id}', event)" 
+                  class="px-3 py-2.5 rounded-xl border border-slate-200 text-slate-600 hover:text-emerald-700 hover:bg-emerald-50 text-xs font-semibold transition"
+                  title="Bookmark"
+                >
+                  <i class="${isSaved ? 'fa-solid text-emerald-600' : 'fa-regular'} fa-bookmark"></i>
+                </button>
+              </div>
+
+            </div>
+
+          </div>
+        `;
+      }).join('');
+    }
+
+    /* ============================================================
+       RENDER TIMETABLE VIEW
+       ============================================================ */
+    function renderTimetable() {
+      const tbody = document.getElementById('timetable-body');
+
+      tbody.innerHTML = ACTIVITIES_DATA.map(act => {
+        return `
+          <tr class="hover:bg-slate-50/80 transition">
+            <td class="py-3 px-4 whitespace-nowrap">
+              <span class="font-bold text-slate-900">${act.day}</span>
+              <span class="block text-xs text-slate-500">${act.time}</span>
+            </td>
+            <td class="py-3 px-4 font-semibold text-slate-900">
+              ${act.title}
+            </td>
+            <td class="py-3 px-4 whitespace-nowrap">
+              <span class="px-2 py-0.5 rounded text-[11px] font-bold bg-slate-100 text-slate-700">
+                ${act.categoryName}
+              </span>
+            </td>
+            <td class="py-3 px-4 text-xs text-slate-600 max-w-xs truncate">
+              ${act.location}
+            </td>
+            <td class="py-3 px-4 text-xs text-slate-600 whitespace-nowrap">
+              ${act.pace}
+            </td>
+            <td class="py-3 px-4 text-right whitespace-nowrap">
+              <button 
+                onclick="openRegistrationModal('${act.title}')"
+                class="px-3 py-1.5 bg-emerald-600 hover:bg-emerald-700 text-white text-xs font-bold rounded-lg transition"
+              >
+                Join
+              </button>
+            </td>
+          </tr>
+        `;
+      }).join('');
+    }
+
+    /* ============================================================
+       SEARCH & FILTERS
+       ============================================================ */
+    function handleSearch(val) {
+      searchQuery = val.trim();
+      const clearBtn = document.getElementById('clear-search-btn');
+      if (searchQuery.length > 0) {
+        clearBtn.classList.remove('hidden');
+      } else {
+        clearBtn.classList.add('hidden');
+      }
+      renderActivities();
+    }
+
+    function clearSearch() {
+      document.getElementById('activity-search-input').value = '';
+      searchQuery = '';
+      document.getElementById('clear-search-btn').classList.add('hidden');
+      renderActivities();
+    }
+
+    function filterCategory(cat) {
+      currentCategory = cat;
+      document.querySelectorAll('.cat-pill').forEach(btn => {
+        if (btn.getAttribute('data-category') === cat) {
+          btn.classList.add('bg-slate-900', 'text-white', 'shadow');
+          btn.classList.remove('bg-slate-100', 'text-slate-700');
+        } else {
+          btn.classList.remove('bg-slate-900', 'text-white', 'shadow');
+          btn.classList.add('bg-slate-100', 'text-slate-700');
+        }
+      });
+      renderActivities();
+    }
+
+    function filterDay(day) {
+      currentDay = day;
+      document.querySelectorAll('.day-pill').forEach(btn => {
+        if (btn.getAttribute('data-day') === day) {
+          btn.classList.add('bg-emerald-100', 'text-emerald-800', 'font-bold');
+        } else {
+          btn.classList.remove('bg-emerald-100', 'text-emerald-800', 'font-bold');
+        }
+      });
+      renderActivities();
+    }
+
+    function resetFilters() {
+      currentCategory = 'all';
+      currentDay = 'all';
+      clearSearch();
+      filterCategory('all');
+      filterDay('all');
+    }
+
+    function switchView(view) {
+      currentView = view;
+      const cardView = document.getElementById('card-view-container');
+      const tableView = document.getElementById('table-view-container');
+      const cardBtn = document.getElementById('view-card-btn');
+      const tableBtn = document.getElementById('view-table-btn');
+
+      if (view === 'card') {
+        cardView.classList.remove('hidden');
+        tableView.classList.add('hidden');
+        cardBtn.classList.add('bg-white', 'text-slate-900', 'shadow-sm');
+        cardBtn.classList.remove('text-slate-600');
+        tableBtn.classList.remove('bg-white', 'text-slate-900', 'shadow-sm');
+        tableBtn.classList.add('text-slate-600');
+      } else {
+        cardView.classList.add('hidden');
+        tableView.classList.remove('hidden');
+        tableBtn.classList.add('bg-white', 'text-slate-900', 'shadow-sm');
+        tableBtn.classList.remove('text-slate-600');
+        cardBtn.classList.remove('bg-white', 'text-slate-900', 'shadow-sm');
+        cardBtn.classList.add('text-slate-600');
+      }
+    }
+
+    function updateCategoryCounts() {
+      const counts = {
+        all: ACTIVITIES_DATA.length,
+        running: ACTIVITIES_DATA.filter(a => a.category === 'running').length,
+        worship: ACTIVITIES_DATA.filter(a => a.category === 'worship').length,
+        outreach: ACTIVITIES_DATA.filter(a => a.category === 'outreach').length,
+        youth: ACTIVITIES_DATA.filter(a => a.category === 'youth').length,
+        study: ACTIVITIES_DATA.filter(a => a.category === 'study').length
+      };
+
+      for (const [key, count] of Object.entries(counts)) {
+        const el = document.getElementById(`count-${key}`);
+        if (el) el.textContent = count;
+      }
+    }
+
+    /* ============================================================
+       PACE FINDER QUIZ WIDGET
+       ============================================================ */
+    let selectedPace = 'walking';
+    let selectedTime = 'weekend';
+
+    function selectPaceOption(btn, val) {
+      selectedPace = val;
+      document.querySelectorAll('.pace-btn').forEach(b => {
+        b.classList.remove('border-emerald-600', 'bg-emerald-50', 'active');
+        b.classList.add('border-slate-200');
+      });
+      btn.classList.add('border-emerald-600', 'bg-emerald-50', 'active');
+      updateQuizRecommendation();
+    }
+
+    function selectTimeOption(btn, val) {
+      selectedTime = val;
+      document.querySelectorAll('.time-btn').forEach(b => {
+        b.classList.remove('border-emerald-600', 'bg-emerald-50', 'active');
+        b.classList.add('border-slate-200');
+      });
+      btn.classList.add('border-emerald-600', 'bg-emerald-50', 'active');
+      updateQuizRecommendation();
+    }
+
+    function updateQuizRecommendation() {
+      const titleEl = document.getElementById('match-title');
+      const descEl = document.getElementById('match-desc');
+      const btnEl = document.getElementById('match-cta-btn');
+
+      if (selectedPace === 'walking') {
+        if (selectedTime === 'evening') {
+          titleEl.textContent = "Community Outreach Street Walk";
+          descEl.textContent = "Walking fellowship delivering food and essentials to neighbors in need every Friday at 6:00 PM.";
+          btnEl.setAttribute('onclick', "openRegistrationModal('Stride For Hope: Street Mission')");
+        } else {
+          titleEl.textContent = "Saturday Sunrise Walking & Stroller Circle";
+          descEl.textContent = "Every Saturday at 7:00 AM at the Church Courtyard. Free coffee, prayer, and a designated walking guide.";
+          btnEl.setAttribute('onclick', "openRegistrationModal('Saturday Sunrise Prayer Run & Walk')");
+        }
+      } else if (selectedPace === 'beginner') {
+        if (selectedTime === 'evening') {
+          titleEl.textContent = "Couch-to-5K Beginner Running Clinic";
+          descEl.textContent = "Thursdays at 6:00 PM on the Church Soft Path. A gentle, step-by-step walk-to-run group with encouraging mentors.";
+          btnEl.setAttribute('onclick', "openRegistrationModal('Couch-to-5K Beginner Running Clinic')");
+        } else {
+          titleEl.textContent = "Saturday Conversational 5K Run Group";
+          descEl.textContent = "Saturdays at 7:00 AM. 10-12 min/mile friendly conversational jog through scenic paved riverside trails.";
+          btnEl.setAttribute('onclick', "openRegistrationModal('Saturday Sunrise Prayer Run & Walk')");
+        }
+      } else if (selectedPace === 'intermediate') {
+        if (selectedTime === 'evening') {
+          titleEl.textContent = "Tuesday Twilight Trail & Track Intervals";
+          descEl.textContent = "Tuesdays at 6:30 PM at the High School Track. Speed workouts and tempo endurance to strengthen your running.";
+          btnEl.setAttribute('onclick', "openRegistrationModal('Tuesday Twilight Trail & Track Intervals')");
+        } else {
+          titleEl.textContent = "Annual 5K & 10K Community Run Team";
+          descEl.textContent = "Join our featured community team training for our signature charity 5K and 10K events.";
+          btnEl.setAttribute('onclick', "openRegistrationModal('Annual Faith & Stride 5K & 10K Run')");
+        }
+      } else {
+        titleEl.textContent = "Track Intervals & Half-Marathon Training";
+        descEl.textContent = "Tuesdays 6:30 PM & Saturday long training blocks. Form drills, tempo endurance, and charity fundraising runs.";
+        btnEl.setAttribute('onclick', "openRegistrationModal('Tuesday Twilight Trail & Track Intervals')");
+      }
+    }
+
+    function scrollToPaceFinder() {
+      const el = document.getElementById('pace-finder');
+      if (el) el.scrollIntoView({ behavior: 'smooth' });
+    }
+
+    /* ============================================================
+       COUNTDOWN TIMER (Annual 5K)
+       ============================================================ */
+    function initCountdown() {
+      // Set target date 25 days into the future
+      const targetDate = new Date();
+      targetDate.setDate(targetDate.getDate() + 24);
+      targetDate.setHours(targetDate.getHours() + 18);
+
+      function updateClock() {
+        const now = new Date().getTime();
+        const distance = targetDate - now;
+
+        if (distance < 0) return;
+
+        const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+        const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+        document.getElementById('days').textContent = days;
+        document.getElementById('hours').textContent = hours < 10 ? '0' + hours : hours;
+        document.getElementById('minutes').textContent = minutes < 10 ? '0' + minutes : minutes;
+        document.getElementById('seconds').textContent = seconds < 10 ? '0' + seconds : seconds;
+      }
+
+      updateClock();
+      setInterval(updateClock, 1000);
+    }
+
+    /* ============================================================
+       MY SAVED ACTIVITIES & LOCALSTORAGE
+       ============================================================ */
+    function toggleSaveActivity(id, event) {
+      if (event) event.stopPropagation();
+
+      const activity = ACTIVITIES_DATA.find(a => a.id === id);
+      if (!activity) return;
+
+      const index = savedActivities.findIndex(a => a.id === id);
+      if (index >= 0) {
+        savedActivities.splice(index, 1);
+        showToast(`Removed "${activity.title}" from your saved list.`, "info");
+      } else {
+        savedActivities.push(activity);
+        showToast(`Added "${activity.title}" to your schedule!`, "success");
+      }
+
+      localStorage.setItem('gracepoint_saved_activities', JSON.stringify(savedActivities));
+      updateSavedBadge();
+      renderActivities();
+      renderSavedDrawer();
+    }
+
+    function updateSavedBadge() {
+      const badge = document.getElementById('saved-count-badge');
+      badge.textContent = savedActivities.length;
+    }
+
+    function toggleMyScheduleDrawer(show) {
+      const drawer = document.getElementById('my-schedule-drawer');
+      if (show) {
+        renderSavedDrawer();
+        drawer.classList.remove('hidden');
+      } else {
+        drawer.classList.add('hidden');
+      }
+    }
+
+    function renderSavedDrawer() {
+      const list = document.getElementById('saved-activities-list');
+      if (savedActivities.length === 0) {
+        list.innerHTML = `
+          <div class="text-center py-12 text-slate-400">
+            <i class="fa-regular fa-bookmark text-4xl mb-3 text-slate-300"></i>
+            <h4 class="font-bold text-slate-700 text-sm">Your schedule is empty</h4>
+            <p class="text-xs text-slate-500 mt-1">Bookmark or RSVP for activities from the directory to build your weekly schedule!</p>
+          </div>
+        `;
+        return;
+      }
+
+      list.innerHTML = savedActivities.map(act => `
+        <div class="bg-slate-50 border border-slate-200 p-4 rounded-2xl flex items-start justify-between gap-3">
+          <div>
+            <span class="text-[10px] font-bold uppercase tracking-wider text-emerald-700 bg-emerald-100 px-2 py-0.5 rounded">
+              ${act.day} • ${act.time}
+            </span>
+            <h4 class="font-bold text-slate-900 text-sm mt-1.5">${act.title}</h4>
+            <p class="text-xs text-slate-500 mt-0.5"><i class="fa-solid fa-location-dot text-rose-500 mr-1"></i>${act.location}</p>
+          </div>
+          <button onclick="toggleSaveActivity('${act.id}')" class="text-slate-400 hover:text-rose-500 p-1 text-sm" title="Remove">
+            <i class="fa-solid fa-trash-can"></i>
+          </button>
+        </div>
+      `).join('');
+    }
+
+    function clearAllSaved() {
+      savedActivities = [];
+      localStorage.removeItem('gracepoint_saved_activities');
+      updateSavedBadge();
+      renderSavedDrawer();
+      renderActivities();
+      showToast("Cleared your saved schedule.", "info");
+    }
+
+    /* ============================================================
+       EXPORT TO ICALENDAR (.ICS GENERATION)
+       ============================================================ */
+    function exportToICalendar() {
+      if (savedActivities.length === 0) {
+        showToast("Please save at least one activity first!", "warning");
+        return;
+      }
+
+      let icsContent = "BEGIN:VCALENDAR\nVERSION:2.0\nPRODID:-//GracePoint Church//Running Ministry//EN\n";
+
+      savedActivities.forEach(act => {
+        const uid = `${act.id}-${Date.now()}@gracepointchurch.org`;
+        icsContent += "BEGIN:VEVENT\n";
+        icsContent += `UID:${uid}\n`;
+        icsContent += `SUMMARY:GracePoint - ${act.title}\n`;
+        icsContent += `DESCRIPTION:${act.description} (Host: ${act.leader})\n`;
+        icsContent += `LOCATION:${act.location}\n`;
+        icsContent += `STATUS:CONFIRMED\n`;
+        icsContent += "END:VEVENT\n";
+      });
+
+      icsContent += "END:VCALENDAR";
+
+      const blob = new Blob([icsContent], { type: "text/calendar;charset=utf-8" });
+      const link = document.createElement("a");
+      link.href = URL.createObjectURL(blob);
+      link.download = "GracePoint_Church_Activities.ics";
+      document.body.appendChild(link);
+      link.click();
+      document.body.removeChild(link);
+
+      showToast("Downloaded your activities to .ics calendar file!", "success");
+    }
+
+    /* ============================================================
+       MODAL HANDLING & RSVP FORM
+       ============================================================ */
+    function populateActivitySelect() {
+      const select = document.getElementById('modal-activity-select');
+      select.innerHTML = ACTIVITIES_DATA.map(a => `
+        <option value="${a.title}">${a.title} (${a.day} ${a.time})</option>
+      `).join('');
+    }
+
+    function openRegistrationModal(activityTitle = null) {
+      const modal = document.getElementById('rsvp-modal');
+      const select = document.getElementById('modal-activity-select');
+
+      if (activityTitle) {
+        // Match or default
+        const match = Array.from(select.options).find(opt => opt.value.toLowerCase().includes(activityTitle.toLowerCase()));
+        if (match) {
+          select.value = match.value;
+        }
+      }
+
+      modal.classList.remove('hidden');
+    }
+
+    function closeRegistrationModal() {
+      document.getElementById('rsvp-modal').classList.add('hidden');
+    }
+
+    function handleRegistrationSubmit(e) {
+      e.preventDefault();
+      const activityTitle = document.getElementById('modal-activity-select').value;
+      const userName = document.getElementById('modal-user-name').value;
+      const userPace = document.getElementById('modal-user-pace').value;
+
+      // Automatically add to user's saved list if not already there
+      const matchedAct = ACTIVITIES_DATA.find(a => a.title === activityTitle);
+      if (matchedAct && !savedActivities.some(a => a.id === matchedAct.id)) {
+        savedActivities.push(matchedAct);
+        localStorage.setItem('gracepoint_saved_activities', JSON.stringify(savedActivities));
+        updateSavedBadge();
+        renderActivities();
+      }
+
+      closeRegistrationModal();
+      showToast(`Praise God! Welcome ${userName}! You're registered for "${activityTitle}". A confirmation email has been dispatched.`, "success");
+
+      // Reset form
+      document.getElementById('rsvp-form').reset();
+    }
+
+    /* ============================================================
+       COURSE ROUTE MODAL
+       ============================================================ */
+    function showRouteModal() {
+      document.getElementById('route-modal').classList.remove('hidden');
+    }
+
+    function closeRouteModal() {
+      document.getElementById('route-modal').classList.add('hidden');
+    }
+
+    /* ============================================================
+       VOLUNTEER & NEWSLETTER HANDLERS
+       ============================================================ */
+    function handleVolunteerSubmit(e) {
+      e.preventDefault();
+      showToast("Thank you for your heart to serve! Our ministry leader will contact you shortly.", "success");
+      e.target.reset();
+    }
+
+    function handleNewsletter(e) {
+      e.preventDefault();
+      showToast("Subscribed! You'll receive our weekly trail map & devotional.", "success");
+      e.target.reset();
+    }
+
+    function toggleFaq(btn) {
+      const content = btn.nextElementSibling;
+      const icon = btn.querySelector('.fa-chevron-down');
+      if (content.classList.contains('hidden')) {
+        content.classList.remove('hidden');
+        icon.classList.add('rotate-180');
+      } else {
+        content.classList.add('hidden');
+        icon.classList.remove('rotate-180');
+      }
+    }
+
+    function toggleMobileMenu() {
+      const menu = document.getElementById('mobile-menu');
+      menu.classList.toggle('hidden');
+    }
+
+    /* ============================================================
+       TOAST NOTIFICATION ENGINE
+       ============================================================ */
+    function showToast(message, type = "success") {
+      const container = document.getElementById('toast-container');
+      const toast = document.createElement('div');
+
+      let icon = "fa-check-circle text-emerald-400";
+      let border = "border-emerald-500/50";
+      if (type === "warning") {
+        icon = "fa-triangle-exclamation text-amber-400";
+        border = "border-amber-500/50";
+      } else if (type === "info") {
+        icon = "fa-info-circle text-sky-400";
+        border = "border-sky-500/50";
+      }
+
+      toast.className = `pointer-events-auto flex items-center gap-3 bg-slate-900/95 backdrop-blur-md text-white text-xs sm:text-sm px-4 py-3 rounded-2xl shadow-xl border ${border} transform transition-all duration-300 translate-y-4 opacity-0 max-w-sm`;
+      toast.innerHTML = `
+        <i class="fa-solid ${icon} text-base flex-shrink-0"></i>
+        <span class="flex-1">${message}</span>
+        <button onclick="this.parentElement.remove()" class="text-slate-400 hover:text-white ml-1">
+          <i class="fa-solid fa-xmark text-xs"></i>
+        </button>
+      `;
+
+      container.appendChild(toast);
+
+      // Trigger animation
+      setTimeout(() => {
+        toast.classList.remove('translate-y-4', 'opacity-0');
+      }, 20);
+
+      // Auto dismiss after 5 seconds
+      setTimeout(() => {
+        toast.classList.add('opacity-0', 'translate-y-2');
+        setTimeout(() => toast.remove(), 300);
+      }, 5000);
+    }
+  </script>
+</body>
+
+</html>
